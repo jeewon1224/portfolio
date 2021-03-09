@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Portfolio</title>
+
+
+</head>
+<body>
+  
+  
+  <header id="header">
+    <div class="btnMenu">
+      <a class="menu_trigger" href="#">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
+    </div>
+    <div class="hiddenMenu">
+      <div href="#" class="hiddenBtn">
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu">
+        <li class="list"><a href="#">HOME</a></li>
+        <li class="list"><a href="#">ABOUT</a></li>
+        <li class="list"><a href="#">WORKS</a></li>
+        <li class="list"><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <div id="fullpage">
+		<!-- <div class='quick'><ul></ul></div> -->
+		<section class="intro fullsection full1" pageNum="1">
+      <div class="wrap">
+        <div class="title">
+          <h1 class="type"></h1>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
+		<section class="fullsection full2" pageNum="2">
+      <h1 class="name">
+        <span class="copy-wrap">
+          Paul DeCotiis
+          </span>
+      </h1>
+      
+      <div class="square"></div>
+      
+      <div class="card">
+        <div class="card-title-wrap">
+          <h1 class="title">
+            <span class="copy-wrap">
+              KIMJEEWON
+            </span>
+          </h1>	
+          <button class="btn hide">
+            View
+          </button>
+        </div>
+        <div class="card-img"></div>
+      </div>
+      
+      
+      
+    </section>
+
+
+		<section class="fullsection full3 works" pageNum="3">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/menu.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/clapper mint.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/clapper pink.jpg" alt=""></div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+		<section class="fullsection full4" pageNum="4"><span>4 PAGE</span></section>
+		<section class="fullsection full5" pageNum="5"><span>5 PAGE</span></section>
+    <div class='quick'><ul></ul></div>
+	</div>
+  
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/section2.js"></script>
+
+
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>
