@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/swiper.css">
 <title>Portfolio</title>
 
 
@@ -11,26 +13,19 @@
 <body>
   
   
-  <header id="header">
-    <div class="btnMenu">
-      <a class="menu_trigger" href="#">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </a>
-    </div>
-    <div class="hiddenMenu">
-      <div href="#" class="hiddenBtn">
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu">
-        <li class="list"><a href="#">HOME</a></li>
-        <li class="list"><a href="#">ABOUT</a></li>
-        <li class="list"><a href="#">WORKS</a></li>
-        <li class="list"><a href="#">CONTACT</a></li>
-      </ul>
-    </div>
+  <header class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">HOME</a></li>
+			<li><a class="menu__item" href="#">PROFILE</a></li>
+			<li><a class="menu__item" href="#">SKILL</a></li>
+			<li><a class="menu__item" href="#">WORKS</a></li>
+			<li><a class="menu__item" href="#">CONTACT</a></li>
+    </ul>
   </header>
   
   <div id="fullpage">
@@ -40,6 +35,10 @@
         <div class="title">
           <h1 class="type"></h1>
         </div>
+        <div class="subTitle">
+          <h3>Kim Jee Won</h3>
+          <p>Personal Web Publishing Portfolio Site</p>
+        </div>
       </div>
     </section>
 
@@ -47,57 +46,168 @@
 
 
     
-		<section class="fullsection full2" pageNum="2">
-      <h1 class="name">
-        <span class="copy-wrap">
-          Paul DeCotiis
-          </span>
-      </h1>
-      
-      <div class="square"></div>
-      
-      <div class="card">
-        <div class="card-title-wrap">
-          <h1 class="title">
-            <span class="copy-wrap">
-              KIMJEEWON
-            </span>
-          </h1>	
-          <button class="btn hide">
-            View
-          </button>
+		<section class="fullsection full2 about" pageNum="2">
+      <div class="about_wrapper">
+        <div class="profileBox">
+          <h1>Profile</h1>
+          <div class="upperBox">
+            <div class="profileImg"><img src="img/profile.JPG" alt=""></div>
+            <p>안녕하세요. 웹퍼블리셔 김지원입니다.</p>
+          </div>
+          <span class="underline"></span>
+          <div class="bottomBox">
+            <p>1994.12.24</p>
+            <p>한성대학교 영어영문학부 졸업</p>
+            <p>더조은 컴퓨터 아카데미<br>
+            스마트 웹디자인 콘텐츠 개발(웹퍼블리셔) 과정 수료</p>
+          </div>
         </div>
-        <div class="card-img"></div>
       </div>
-      
-      
-      
     </section>
 
+    <section class="fullsection full3 skill" pageNum="3">
+      <div class="skill_wrap">
+        <div class="skillList">
+          <div class="html">
+            <div class="skillIcon"><img src="img/HTML.png" alt="html icon"></div>
+            <div class="skillTxt">
+              <h4>HTML5</h4>
+              <p>문서를 구조화하여 웹표준에 맞게 작업합니다.</p>
+              <div class="bar htmlbar">
+                <div class="filledBar"></div>
+                <div class="hiddenBar"></div>
+                <span class="percent">90%</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of html -->
+          <div class="css">
+            <div class="skillIcon"><img src="img/css.html.png" alt="css icon"></div>
+            <div class="skillTxt">
+              <h4>CSS3</h4>
+              <p>미디어 쿼리를 이용한 반응형 제작이 가능합니다.</p>
+              <div class="bar cssbar">
+                <div class="filledBar"></div>
+                <div class="hiddenBar"></div>
+                <span class="percent">90%</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of css -->
+          <div class="js">
+            <div class="skillIcon"><img src="img/js.png" alt="js icon"></div>
+            <div class="skillTxt">
+              <h4>Java Script</h4>
+              <p>Java Script와 JQuery를 활용하여 간단한 동적 이벤트를 구현하고 라이브러리를 사용할 수 있습니다.</p>
+              <div class="bar jsbar">
+                <div class="filledBar"></div>
+                <div class="hiddenBar"></div>
+                <span class="percent">60%</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of js -->
+          <div class="photoshop">
+            <div class="skillIcon"><img src="img/photoshop_CC_icon.png" alt="ps icon"></div>
+            <div class="skillTxt">
+              <h4>Photoshop</h4>
+              <p>기본적인 포토샵 작업이 가능합니다.</p>
+              <div class="bar psbar">
+                <div class="filledBar"></div>
+                <div class="hiddenBar"></div>
+                <span class="percent">50%</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of html -->
+        </div>
+      </div>
+    </section>
 
-		<section class="fullsection full3 works" pageNum="3">
+		<section class="fullsection full4 works" pageNum="4">
       <div class="swiper-container">
+    
+        <!-- swiper slides -->
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/menu.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/clapper mint.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/clapper pink.jpg" alt=""></div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">
+                <div class="slide_innerbox">
+                  <div class="imgBox"><img src="img/example.png" alt=""></div>
+                  <div class="txtBox">
+                    <h2>#3</h2>
+                    <h1>Cine Ground</h1>
+                    <p>제작기간 : </p>
+                    <p>HTML </p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide"> 
+              <div class="slide_innerbox">
+                <div class="imgBox"><img src="img/example.png" alt=""></div>
+                <div class="txtBox">
+                  <h2>#3</h2>
+                  <h1>Cine Ground</h1>
+                  <p>제작기간 : </p>
+                  <p>HTML </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slide_innerbox">
+                <div class="imgBox"><img src="img/example.png" alt=""></div>
+                <div class="txtBox">
+                  <h2>#3</h2>
+                  <h1>Cine Ground</h1>
+                  <p>제작기간 : </p>
+                  <p>HTML </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slide_innerbox">
+                <div class="imgBox"><img src="img/example.png" alt=""></div>
+                <div class="txtBox">
+                  <h2>#3</h2>
+                  <h1>Cine Ground</h1>
+                  <p>제작기간 : </p>
+                  <p>HTML </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slide_innerbox">
+                <div class="imgBox"><img src="img/example.png" alt=""></div>
+                <div class="txtBox">
+                  <h2>#3</h2>
+                  <h1>Cine Ground</h1>
+                  <p>제작기간 : </p>
+                  <p>HTML </p>
+                </div>
+              </div>
+            </div>
         </div>
-        <!-- Add Pagination -->
+        <!-- !swiper slides -->
+        
+        <!-- next / prev arrows -->
+        <div class="swiper-button-next nextBtn"></div>
+        <div class="swiper-button-prev prevBtn"></div>
+        <!-- !next / prev arrows -->
+        
+        <!-- pagination dots -->
         <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- !pagination dots -->
       </div>
     </section>
-		<section class="fullsection full4" pageNum="4"><span>4 PAGE</span></section>
+
+
+
+
+
 		<section class="fullsection full5" pageNum="5"><span>5 PAGE</span></section>
+		<section class="fullsection full6" pageNum="6"><span>6 PAGE</span></section>
     <div class='quick'><ul></ul></div>
 	</div>
   
@@ -109,25 +219,27 @@
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/section2.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/section2.js"></script>
+  <script src="js/swiper.js"></script>
+  
 
 
 
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 30,
+ <script>
+   var swiper = new Swiper('.swiper-container', {
     loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
-</script>
+    pagination: {
+      clickable : true,
+        el: '.swiper-pagination',
+    },
+});
+ </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </body>
 </html>

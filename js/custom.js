@@ -122,29 +122,6 @@ function quickClick(){
 
 
 
-	// hidden navi 
-
-		let showNav = function(){
-			$(".btnMenu").click(function(){
-				$(".hiddenMenu").addClass("active");
-				// $(".hiddenMenu").slideDown("fast");
-			});
-					
-			$(".btnMenu").click(function(){
-				
-				$(".hiddenMenu").slideUp("fast");
-				$(".hiddenMenu").removeClass("active");
-			});
-		}
-					
-		showNav();
-
-
-
-		// let showNavi{}
-
-
-
 
 
 
