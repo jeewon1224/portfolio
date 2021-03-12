@@ -11,6 +11,8 @@ li { font-size: 13px; margin: 5px 0px 10px 0px; }
 html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;font-family: 'Open Sans', sans-serif;}
 img{display: block;}
 h1, h2, h3, h4, h5, h6{margin:0}
+.clear:after{clear: both; display: block; content: '';}
+.center{width: 100%; height: auto; max-width: 1400px; margin: auto;}
 
 
 
@@ -182,21 +184,21 @@ h1, h2, h3, h4, h5, h6{margin:0}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* 인트로 페이지 */
 
-.intro .wrap{width: 100%; height: 100%; margin: auto; _max-width: 1400px; padding: 150px; }
-.intro .title{width: 100%; height: auto;}
-.intro .title .type {margin: 0 auto; width: 100%; font-size: 60px; font-family: 'Poppins', sans-serif; _background: linear-gradient(to bottom, rgba(83,17,191,1) 1%,rgba(150,76,255,1) 34%,rgba(247,181,255,1) 96%);
+.home .home_wrapper{width: 100%; height: 100%; margin: auto; _max-width: 1400px; padding: 150px; }
+.home .title{width: 100%; height: auto;}
+.home .title .type {margin: 0 auto; width: 100%; font-size: 60px; font-family: 'Poppins', sans-serif; _background: linear-gradient(to bottom, rgba(83,17,191,1) 1%,rgba(150,76,255,1) 34%,rgba(247,181,255,1) 96%);
   _-webkit-background-clip: text;
   _-webkit-text-fill-color: transparent; color: #111;}
-.intro .title .type::after {
+.home .title .type::after {
   content: '|';
   display: inline;
   animation: blink 0.7s infinite;
 }
 
-.intro .subTitle{text-align: right; padding: 300px 0 0 0; font-family: 'Poppins', sans-serif;}
-.intro .subTitle h3{font-size: 40px; background: linear-gradient(to bottom, rgba(119,218,255,1) 1%,rgba(163,193,255,1) 34%,rgba(255,255,255,1) 96%);  -webkit-background-clip: text;
+.home .subTitle{text-align: right; padding: 300px 0 0 0; font-family: 'Poppins', sans-serif;}
+.home .subTitle h3{font-size: 40px; background: linear-gradient(to bottom, rgba(119,218,255,1) 1%,rgba(163,193,255,1) 34%,rgba(255,255,255,1) 96%);  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
-.intro .subTitle p{margin-top: 15px;}
+.home .subTitle p{margin-top: 15px;}
 
 
 
@@ -241,14 +243,24 @@ h1, h2, h3, h4, h5, h6{margin:0}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* 섹션2 페이지 */
 
-.about {width: 100%; height: 100%; }
-.about_wrapper{_width: 100%; max-width: 1400px; margin: auto; padding: 50px; height: 100%;}
-.about .profileBox{width: 100%; height: 100%; margin: auto; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.about {width: 100%; height: 100%; position: relative;}
+.about_wrapper{width: 100%; _max-width: 1400px; margin: auto; padding: 50px; height: 100%; display: flex; align-items: center; justify-content: center;}
+.about_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);}
+
+.about .profileBox{width: 50%; height: 100%; margin: auto; text-align: center; display: flex; flex-direction: column; flex-direction: column;
+  align-items: center; justify-content: center;}
 .about .profileBox h1{margin: 0; font-family: 'Poppins', sans-serif; font-size: 40px;}
-.profileBox .upperBox{}
-.profileBox .upperBox .profileImg{width: 300px; height: 300px; padding: 15px; }
-.profileBox .upperBox .profileImg img{height: 100%;  border-radius: 50%;}
-.about .profileBox .underline{border: 1px solid #999;  width: 300px; display: inline-block; margin:40px 0;}
+
+.profileBox .upperBox{position: relative;}
+.profileBox .upperBox .profileLine{width: 300px; height: 300px; padding: 15px; border: 4px solid #A3C1FF; position: relative; z-index: 10;}
+.profileBox .upperBox .profilePic {width: 300px; height: 300px; position: absolute; top: 10px; left: 10px;}
+.profileBox .upperBox .profilePic img{width: 100%; }
+.profileBox .upperBox .hello{margin: 20px 0;}
+
+.about .profileBox .underline{border: 1px solid #999;  width: 300px; display: inline-block; margin:20px 0;}
+
+
+
 .about .profileBox .bottomBox{}
 .about .profileBox .bottomBox p{margin: 10px 0;}
 
@@ -285,9 +297,9 @@ h1, h2, h3, h4, h5, h6{margin:0}
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* works 페이지 */
-.works{width: 100%; height: 100%;}
-
-
+.works{width: 100%; height: 100%; position: relative;}
+.works_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);}
+.works_wrapper{height: 100%; width: 100%; margin: auto;}
 .swiper-container {width: 90%; height: 100%; }
 
 /* .swiper-slide {
@@ -313,8 +325,87 @@ h1, h2, h3, h4, h5, h6{margin:0}
 .swiper-slide{display: flex; align-items: center;}
 .slide_innerbox{width: 100%; display: flex; flex-direction: row; padding: 50px; height: 100%;}
 .slide_innerbox .imgBox{width: 70%; padding: 0 30px; margin: auto;}
-.slide_innerbox .imgBox img{width: 100%; box-shadow: 10px 10px 9px #888;
+.slide_innerbox .imgBox img{width: 100%; _box-shadow: 10px 10px 9px #888;
 }
-.slide_innerbox .txtBox{width: 30%;  background-color: aquamarine; display: flex; flex-direction: column; justify-content: center; padding: 10px}
+.slide_innerbox .txtBox{width: 30%;  background-color: rgba(189, 189, 189, 0.74); display: flex; flex-direction: column; justify-content: center; padding: 10px}
 .slide_innerbox .txtBox h1, .slide_innerbox .txtBox h2{margin: 0;}
+
+
+
+
+.txtBox .show{
+  _position: absolute; width: 100%; height: 40px; background: #e74c3c; color: #fff; border-radius: 5px;border: 0; border-bottom: 2px solid #c0392b; cursor: pointer;}
+
+
+  .txtBox .show:hover{background: #c0392b;}
+
+  .txtBox .show:active{
+    transform: scale(0.9);
+  }
+/* 
+  // Close Button */
+
+  .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+  }
+
+  /* // The mask */
+
+
+  .mask {
+    _position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 75, 75, 0.7);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+    position: fixed;
+}
+.modal {
+  _position: fixed; top: 50%; left: 50%; width: 1200px; height: 800px; background: #bdc3c7; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out;
+  _transform: translateY(45px);}
+
+
+/* // Class Active */
+
+.active{
+  visibility: visible; opacity: 1;}
+
+.active + .modal {visibility: visible; opacity: 1;
+  _transform: translateY(0);}
+
+/* modal 창 내부 스타일링 */
+.modalItem{width: 100%; height: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgBox_1 {width: 70%; height: auto; background: #888;}
+.imgBox_1 .frame{width: 100%; padding: 5px; height: 600px; background-image: url(../img/pc.png); background-repeat: no-repeat; background-size: contain; z-index: 10; position: relative;}
+.imgBox_1 .frame .pcImg{width: 100%; height: 500px; transition: ease-in-out 8s; background-image: url(../img/overwatch_pc.png); background-size: cover; background-position: top; position: absolute;}
+.imgBox_1 .frame .pcImg:hover{background-position: bottom;}
+
+
 

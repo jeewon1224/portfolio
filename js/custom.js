@@ -89,7 +89,7 @@ function quickClick(){
 
 
 	var typed3 = new Typed('.type', {
-    strings: ['Welcome!', "I'm Jeewon", 'A Publisher'],
+    strings: ['Welcome!', "I'm Jeewon", 'a Publisher'],
     typeSpeed: 50,
     backSpeed: 30,
     smartBackspace: true, // this is a default
@@ -116,13 +116,34 @@ function quickClick(){
         
 
 
-
+// typed.js의 addClass때문에 커서가 발생하는 문제
+// 생성된 class를 숨겨서 해결
 	$(".typed-cursor").hide();
 
 
 
 
-
+	$(".show").on("click", function(){
+		$(".mask").addClass("active");
+	});
+	
+	// 모달창 닫기 기능
+	
+	function closeModal(){
+		$(".mask").removeClass("active");
+	}
+	
+	// 클릭,키보드 esc 로 닫기
+	
+	$(".close, .mask").on("click", function(){
+		closeModal();
+	});
+	
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+			closeModal();
+		}
+	});
 
 
 
