@@ -1,3 +1,16 @@
+@media screen and (max-width:1024px){
+
+  .about_title{top: 10px; transform: rotate(0); width: 100%; text-align: center;}
+  .about_wrapper{flex-direction: column; padding: 0 50px;}
+  .about .profileBox{width: 100%; height: auto;}
+  .profileBox .upperBox .profileLine,
+  .profileBox .upperBox .profilePic{display: none;}
+  .about .skillList{width: 100%; height: auto;}
+  .skillList>div{margin: 5px 0;}
+
+}
+
+
 @media screen and (max-width:768px){
   .intro .wrap{padding: 150px 50px;}
   .type{text-align: center;}

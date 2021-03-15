@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/swiper.css">
-<link rel="stylesheet" href="star.css">
+<link rel="stylesheet" href="css/fullpage.css">
 <title>Portfolio</title>
 
 
@@ -21,22 +21,21 @@
     </label>
 
     <ul class="menu__box">
-      <li><a class="menu__item" href="#">HOME</a></li>
-			<li><a class="menu__item" href="#">PROFILE</a></li>
-			<li><a class="menu__item" href="#">SKILL</a></li>
-			<li><a class="menu__item" href="#">WORKS</a></li>
-			<li><a class="menu__item" href="#">CONTACT</a></li>
+      <li class="menu_list"><a class="menu__item menu__item1" href="#1st">HOME</a></li>
+			<li class="menu_list"><a class="menu__item menu__item2" href="#2st">ABOUT</a></li>
+			<li class="menu_list"><a class="menu__item menu__item3" href="#3st">WORKS</a></li>
+			<li class="menu_list"><a class="menu__item menu__item4" href="#4st">CONTACT</a></li>
     </ul>
   </header>
   
   <div id="fullpage">
 		<!-- <div class='quick'><ul></ul></div> -->
-		<section class="home fullsection full1" pageNum="1">
+		<section class="home fullsection full1 section" pageNum="1" id="1st" data-anchor="1st">
       <div class="home_wrapper wrap">
         <div class="title">
           <h1 class="type"></h1>
         </div>
-        <div class="subTitle">
+        <div class="sub_title">
           <h3>Kim Jee Won</h3>
           <p>Personal Web Publishing Portfolio Site</p>
         </div>
@@ -49,30 +48,30 @@
 
 
     
-		<section class="fullsection full2 about" pageNum="2">
+		<section class="about fullsection full2section section" pageNum="2" id="2st"  data-anchor="2st">
       <div class="about_wrapper wrap center">
         <h1 class="about_title">ABOUT</h1>
-        <div class="profileBox">
-          <div class="upperBox">
-            <div class="profileLine"></div>
-            <div class="profilePic">
+        <div class="profile_box">
+          <div class="upper_box">
+            <div class="profile_line"></div>
+            <div class="profile_pic">
               <img src="img/profile.JPG" alt="">
             </div>
             <p class="hello">안녕하세요. 웹퍼블리셔 김지원입니다.</p>
           </div>
           <span class="underline"></span>
-          <div class="bottomBox">
+          <div class="bottom_box">
             <p>1994.12.24</p>
             <p>한성대학교 영어영문학부 졸업</p>
             <p>더조은 컴퓨터 아카데미<br>
             스마트 웹디자인 콘텐츠 개발(웹퍼블리셔) 과정 수료</p>
           </div>
         </div>
-        <div class="skillList">
+        <div class="skill_list">
           <div class="html">
-            <div class="skillIcon"><img src="img/HTML.png" alt="html icon"></div>
-            <div class="skillTxt">
-              <h4>HTML5</h4>
+            <div class="skill_icon"><img src="img/HTML.png" alt="html icon"></div>
+            <div class="skill_txt">
+              
               <p>문서를 구조화하여 웹표준과 웹접근성을 준수하며 작업합니다.</p>
               <div class="bar htmlbar">
                 <div class="filledBar"></div>
@@ -83,9 +82,9 @@
           </div>
           <!-- end of html -->
           <div class="css">
-            <div class="skillIcon"><img src="img/css.html.png" alt="css icon"></div>
-            <div class="skillTxt">
-              <h4>CSS3</h4>
+            <div class="skill_icon"><img src="img/css.html.png" alt="css icon"></div>
+            <div class="skill_txt">
+              
               <p>디자인을 언어 상에서 표현할 수 있도록 CSS3 웹 디자인 언어 사용하며 미디어 쿼리를 통해 반응형 제작이 가능합니다.</p>
               <div class="bar cssbar">
                 <div class="filledBar"></div>
@@ -96,9 +95,9 @@
           </div>
           <!-- end of css -->
           <div class="js">
-            <div class="skillIcon"><img src="img/js.png" alt="js icon"></div>
-            <div class="skillTxt">
-              <h4>Java Script</h4>
+            <div class="skill_icon"><img src="img/js.png" alt="js icon"></div>
+            <div class="skill_txt">
+              
               <p>Java Script와 JQuery를 활용하여 간단한 동적 이벤트를 구현하고 라이브러리를 사용할 수 있습니다.</p>
               <div class="bar jsbar">
                 <div class="filledBar"></div>
@@ -109,9 +108,9 @@
           </div>
           <!-- end of js -->
           <div class="photoshop">
-            <div class="skillIcon"><img src="img/photoshop_CC_icon.png" alt="ps icon"></div>
-            <div class="skillTxt">
-              <h4>Photoshop</h4>
+            <div class="skill_icon"><img src="img/photoshop_CC_icon.png" alt="ps icon"></div>
+            <div class="skill_txt">
+              
               <p>기본적인 포토샵 작업이 가능합니다.</p>
               <div class="bar psbar">
                 <div class="filledBar"></div>
@@ -127,7 +126,7 @@
 
     
 
-		<section class="fullsection full3 works" pageNum="3">
+		<section class="fullsection full3 works section" pageNum="3"  id="3st"  data-anchor="3st">
       <div class="works_wrapper">
         <h1 class="works_title">Works</h1>
         
@@ -137,13 +136,18 @@
           <div class="swiper-wrapper">
               <div class="swiper-slide">
                   <div class="slide_innerbox">
-                    <div class="imgBox"><img src="img/example.png" alt=""></div>
+                    <div class="img_box">
+                      <a href="#" class="imgLink">
+                        <img src="img/example.png" alt="">
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                    </div>
                     <div class="txtBox">
-                      <h2>#1</h2>
-                      <h1>Gold</h1>
+                      <h2>#01</h2>
+                      <h1>Database Project</h1>
                       <p>제작기간 : 2020.12.16 - 2021.02.04</p>
-                      <p>HTML5 CSS3 JQuery JavaScript PHP</p>
-                      <button class="show" aria-haspopup="true">View Detail</button>
+                      <p>HTML5 CSS3 JQuery JavaScript PHP MariaDB</p>
+                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
                     </div>
                   </div>
                   <!--  end of slide_innerbox -->
@@ -151,10 +155,66 @@
                   <div class="mask" role="dialog"></div>
                   <div class="modal" role="alert">
                     <button class="close" role="button">X</button>
-                    <div class="modalItem">
-                      <div class="titleSec">
-                        <h2>Luxury Gold</h2>
-                        <!-- <div class="imageSec"><img src="img/overwatch_pc.png" alt=""></div> -->
+                    <div class="modal_item">
+                      <div class="title_sec">
+                        <div class="title_img">
+                          <div><img src="img/gold_pc.png" alt=""></div>
+                        </div>
+                        <div class="title_desc">
+                          <h3>Database Project</h3>
+                          <p>Responsive web site</p>
+                          <p>제작기간 : 2020.12.16 - 2021.02.04</p>
+
+                          <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                          <div class="participation">
+                            <p>기획
+                              <br>
+                              디자인
+                              <br>
+                              퍼블리싱
+                            </p>
+                            <p>100%
+                              <br>
+                              100%
+                              <br>
+                              100%
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end of title section -->
+                      <div class="details">
+                        <div class="tool">
+                          <span>Tools</span>
+                          <div class="tool_imgs">
+                            <div class="img_box"><img src="img/HTML.png" alt=""></div>
+                            <div class="img_box"><img src="img/css.html.png" alt=""></div>
+                            <div class="img_box"><img src="img/js.png" alt=""></div>
+                            <div class="img_box"><img src="img/php.png" alt=""></div>
+                            <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
+                            <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                          </div>
+                        </div>
+                        <div class="font">
+                          <span>Font</span>
+                          <div class="font_box">
+                            <div class="font_name">
+                              <p>Noto Sans</p>
+                              <p>Open Sans</p>
+                              <p>Dancing Script</p>
+                            </div>
+                            <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
+                            깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                            메인 페이지에 사용된 포인트 폰트</p>
+                          </div>
+                        </div>
+                        <!-- end of font -->
+                        <div class="color">
+                          <span>Color</span>
+                          <div class="color_box">
+                            <p>#EEB4BA</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -164,13 +224,13 @@
               
               <div class="swiper-slide"> 
                 <div class="slide_innerbox">
-                  <div class="imgBox"><img src="img/example.png" alt=""></div>
+                  <div class="img_box"><img src="img/example.png" alt=""></div>
                   <div class="txtBox">
                     <h2>#2</h2>
                     <h1>My Schedule</h1>
                     <p>제작기간 : 2021.02.08 - 02.18</p>
                     <p>HTML5 CSS3 JQuery JavaScript PHP</p>
-                    <button class="show" aria-haspopup="true">View Detail</button>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
 
                   </div>
                 </div>
@@ -182,13 +242,13 @@
               
               <div class="swiper-slide">
                 <div class="slide_innerbox">
-                  <div class="imgBox"><img src="img/example.png" alt=""></div>
+                  <div class="img_box"><img src="img/example.png" alt=""></div>
                   <div class="txtBox">
                     <h2>#3</h2>
                     <h1>My Schedule</h1>
                     <p>제작기간 : 2021.02.19 - 02.28</p>
                     <p>HTML5 CSS3 JQuery JavaScript</p>
-                    <button class="show" aria-haspopup="true">View Detail</button>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
 
                   </div>
                 </div>
@@ -200,13 +260,13 @@
               
               <div class="swiper-slide">
                 <div class="slide_innerbox">
-                  <div class="imgBox"><img src="img/example.png" alt=""></div>
+                  <div class="img_box"><img src="img/example.png" alt=""></div>
                   <div class="txtBox">
                     <h2>#4</h2>
                     <h1>Cine Ground</h1>
                     <p>제작기간 : 2021.03.02 - 03.07</p>
                     <p>HTML5 CSS3 JQuery JavaScript PHP</p>
-                    <button class="show" aria-haspopup="true">View Detail</button>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
 
                   </div>
                 </div>
@@ -218,13 +278,13 @@
               
               <div class="swiper-slide">
                 <div class="slide_innerbox">
-                  <div class="imgBox"><img src="img/example.png" alt=""></div>
+                  <div class="img_box"><img src="img/example.png" alt=""></div>
                   <div class="txtBox">
                     <h2>#5</h2>
                     <h1>기획 프로젝트</h1>
                     <p>제작기간 : </p>
                     <p>HTML5 CSS3 JQuery JavaScript</p>
-                    <button class="show" aria-haspopup="true">View Detail</button>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
 
                   </div>
                 </div>
@@ -235,7 +295,7 @@
               </div>
 
               
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="slide_innerbox">
                   
                   <div class="imgBox_1">
@@ -248,7 +308,7 @@
                     <h1>Cine Ground</h1>
                     <p>제작기간 : </p>
                     <p>HTML5 CSS3 JQuery JavaScript</p>
-                    <button class="show" aria-haspopup="true">View Detail</button>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
 
                   </div>
                 </div>
@@ -256,7 +316,7 @@
                   <div class="modal" role="alert">
                     <button class="close" role="button">X</button>
                   </div>
-              </div>
+              </div> -->
           </div>
           <!-- !swiper slides -->
           
@@ -276,50 +336,37 @@
 
 
 
-		<section class="fullsection full4" pageNum="4">
-      
+		<section class="contact fullsection full4 section" pageNum="4"  id="4st"  data-anchor="4st">
+      <div class="contact_wrapper">
+        <h1 class="contact_title">Contact</h1>
+      </div>
     </section>
 
-		<section class="fullsection full5" pageNum="5">
-      <!-- <div class="star"></div>
-      <div class="meteor-1"></div>
-      <div class="meteor-2"></div>
-      <div class="meteor-3"></div>
-      <div class="meteor-4"></div>
-      <div class="meteor-5"></div>
-      <div class="meteor-6"></div>
-      <div class="meteor-7"></div>
-      <div class="meteor-8"></div>
-      <div class="meteor-9"></div>
-      <div class="meteor-10"></div>
-      <div class="meteor-11"></div>
-      <div class="meteor-12"></div>
-      <div class="meteor-13"></div>
-      <div class="meteor-14"></div>
-      <div class="meteor-15"></div> -->
 
-    </section>
     <div class='quick'><ul></ul></div>
 	</div>
   
 
 
 
-
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.js"></script>
+  <script src="js/fullpage.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/custom.js"></script>
-  <!-- <script src="js/section2.js"></script> -->
   <script src="js/swiper.js"></script>
   
+
 
 
 
  <script>
    var swiper = new Swiper('.swiper-container', {
     loop: true,
+    // autoplay: 
+    // {
+    //   delay: 3000,
+    // },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -329,8 +376,19 @@
         el: '.swiper-pagination',
     },
 });
+
+// $(".swiper-slide").hover(
+//   function(){
+//     swiper.autoplay.stop();
+//   }, function(){
+//     swiper.autoplay.start();
+//   }
+// );
  </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+ 
+
 
 </body>
 </html>
