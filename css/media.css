@@ -1,17 +1,81 @@
+@media screen and (max-width:1450px){
+  .home .home_wrapper{flex-direction: column; padding: 150px 100px;}
+  .about_wrapper{padding: 100px;}
+}
+
 @media screen and (max-width:1024px){
 
-  .about_title{top: 10px; transform: rotate(0); width: 100%; text-align: center;}
-  .about_wrapper{flex-direction: column; padding: 0 50px;}
-  .about .profileBox{width: 100%; height: auto;}
-  .profileBox .upperBox .profileLine,
-  .profileBox .upperBox .profilePic{display: none;}
-  .about .skillList{width: 100%; height: auto;}
-  .skillList>div{margin: 5px 0;}
+
+  /* about */
+  .about_title{top: 50px; transform: rotate(0); width: 100%; text-align: center; }
+  .about_wrapper{flex-direction: column; padding: 0 100px;}
+  .about .profile_box{width: 100%; flex-direction: row; height: auto; justify-content: space-evenly}
+  .profile_box .upper_box{margin-right: 20px;}
+  .about .profile_box .underline{display: none;}
+  .about .profile_box .bottom_box{text-align: left; padding-left: 10px;}
+  
+  .about .skill_list{width: 100%; height: auto; margin-top: 90px;}
+  .about .skill_list>div{margin:0 0 10px 0;}
+  .skill_list .skill_icon{width: 50px;}
+  .skill_list .skill_txt p{font-size: 14px;}
+
+ 
+  /* works */
+  .works_title{top: 50px; transform: rotate(0); width: 100%; text-align: center; }
 
 }
 
 
 @media screen and (max-width:768px){
-  .intro .wrap{padding: 150px 50px;}
-  .type{text-align: center;}
+  .home .home_wrapper{padding: 150px 50px;}
+
+
+
+  /* about */
+  .about_wrapper{padding: 100px 50px;}
+  .about .profile_box{flex-direction: column;}
+  .profile_box .upper_box{display: none!important;}
+  .about .profile_box .bottom_box p{text-align: center;}
+  .about .profile_box .underline2{display: block;}
+  .skill_list .skill_icon{width: 40px;}
+
+
+
+  /* works */
+  .slide_innerbox{flex-direction: column;}
+  .slide_innerbox .img_box{width: 100%; padding: 10px;}
+  .slide_innerbox .txtBox{height: 200px; width: 100%; margin: 0;}
+
+  .txtBox .viewBtn{bottom: 20px; right: 10px;}
+}
+
+@media screen and (max-width:500px){
+  .home .title,
+  .home .sub_title{text-align: center;}
+
+
+
+
+
+  /* works */
+  .slide_innerbox{padding: 0 10px;}
+  .slide_innerbox .img_box{display: none;}
+  .slide_innerbox .txtBox{height: 100vh; width: 300px;}
+
+
+}
+
+
+
+@media screen and (max-width:500px){
+
+  .home .home_wrapper{padding: 30px;}
+  .home .title{margin-top: 100px;}
+  .home .title .type{font-size: 40px;}
+  .home .sub_title{margin-top: 0; padding: 0; text-align: right;}
+  .home .sub_title h3{font-size: 20px;}
+  .home .sub_title p {
+    margin-top: 0px;
+    font-size: 13px;
+}
 }

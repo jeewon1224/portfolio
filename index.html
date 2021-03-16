@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/fullpage.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/swiper.css">
-<link rel="stylesheet" href="css/fullpage.css">
+
 <title>Portfolio</title>
 
 
@@ -30,7 +32,7 @@
   
   <div id="fullpage">
 		<!-- <div class='quick'><ul></ul></div> -->
-		<section class="home fullsection full1 section" pageNum="1" id="1st" data-anchor="1st">
+		<section class="home fullsection full1 section" pageNum="1" id="home" data-anchor="1st">
       <div class="home_wrapper wrap">
         <div class="title">
           <h1 class="type"></h1>
@@ -48,8 +50,8 @@
 
 
     
-		<section class="about fullsection full2section section" pageNum="2" id="2st"  data-anchor="2st">
-      <div class="about_wrapper wrap center">
+		<section class="about fullsection full2section section" pageNum="2" id="about"  data-anchor="2st">
+      <div class="about_wrapper wrap">
         <h1 class="about_title">ABOUT</h1>
         <div class="profile_box">
           <div class="upper_box">
@@ -57,15 +59,19 @@
             <div class="profile_pic">
               <img src="img/profile.JPG" alt="">
             </div>
-            <p class="hello">안녕하세요. 웹퍼블리셔 김지원입니다.</p>
           </div>
           <span class="underline"></span>
           <div class="bottom_box">
+            <p class="hello">안녕하세요. 웹퍼블리셔 김지원입니다.</p>
+
             <p>1994.12.24</p>
             <p>한성대학교 영어영문학부 졸업</p>
             <p>더조은 컴퓨터 아카데미<br>
             스마트 웹디자인 콘텐츠 개발(웹퍼블리셔) 과정 수료</p>
+            
           </div>
+          <span class="underline2"></span>
+          
         </div>
         <div class="skill_list">
           <div class="html">
@@ -126,7 +132,7 @@
 
     
 
-		<section class="fullsection full3 works section" pageNum="3"  id="3st"  data-anchor="3st">
+		<section class="fullsection full3 works section" pageNum="3"  id="works"  data-anchor="3st">
       <div class="works_wrapper">
         <h1 class="works_title">Works</h1>
         
@@ -144,9 +150,10 @@
                     </div>
                     <div class="txtBox">
                       <h2>#01</h2>
-                      <h1>Database Project</h1>
-                      <p>제작기간 : 2020.12.16 - 2021.02.04</p>
-                      <p>HTML5 CSS3 JQuery JavaScript PHP MariaDB</p>
+                      <h1>Database</h1>
+                      <p>Database Project</p>
+                      <!-- <p>제작기간 : 2020.12.16 - 2021.02.04</p> -->
+                      <!-- <p>HTML5 CSS3 JQuery JavaScript PHP MariaDB</p> -->
                       <button class="viewBtn" aria-haspopup="true">View Detail</button>
                     </div>
                   </div>
@@ -162,24 +169,17 @@
                         </div>
                         <div class="title_desc">
                           <h3>Database Project</h3>
-                          <p>Responsive web site</p>
-                          <p>제작기간 : 2020.12.16 - 2021.02.04</p>
+                          <hr>
+                          <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                          <p class="pro_subDesc">Responsive web site</p>
+                          <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
                           <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
                           <div class="participation">
-                            <p>기획
-                              <br>
-                              디자인
-                              <br>
-                              퍼블리싱
-                            </p>
-                            <p>100%
-                              <br>
-                              100%
-                              <br>
-                              100%
-                            </p>
+                            <p>기획<br>디자인<br>퍼블리싱</p>
+                            <p>100%<br>100%<br>100%</p>
                           </div>
+                          
                         </div>
                       </div>
                       <!-- end of title section -->
@@ -215,83 +215,342 @@
                             <p>#EEB4BA</p>
                           </div>
                         </div>
+                        <!-- end of color -->
                       </div>
+                      <!-- end of details -->
                     </div>
+                    <!-- end of modal item -->
                   </div>
+                  <!-- end of modal -->
 
 
               </div>
               
               <div class="swiper-slide"> 
                 <div class="slide_innerbox">
-                  <div class="img_box"><img src="img/example.png" alt=""></div>
+                  <div class="img_box">
+                    <a href="#" class="imgLink">
+                      <img src="img/example.png" alt="">
+                      <i class="fa fa-search-plus"></i>
+                    </a>
+                  </div>
                   <div class="txtBox">
-                    <h2>#2</h2>
+                    <h2>#01</h2>
+                    <h1>Overwatch</h1>
+                    <p>Web Renewal</p>
+                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                  </div>
+                </div>
+                <!--  end of slide_innerbox -->
+                <div class="mask" role="dialog"></div>
+                <div class="modal" role="alert">
+                  <button class="close" role="button">X</button>
+                  <div class="modal_item">
+                    <div class="title_sec">
+                      <div class="title_img">
+                        <div><img src="img/gold_pc.png" alt=""></div>
+                      </div>
+                      <div class="title_desc">
+                        <h3>Overwatch</h3>
+                        <hr>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_subDesc">Responsive web site</p>
+                        <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
+
+                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <div class="participation">
+                          <p>기획<br>디자인<br>퍼블리싱</p>
+                          <p>100%<br>100%<br>100%</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <!-- end of title section -->
+                    <div class="details">
+                      <div class="tool">
+                        <span>Tools</span>
+                        <div class="tool_imgs">
+                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
+                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
+                          <div class="img_box"><img src="img/js.png" alt=""></div>
+                          <div class="img_box"><img src="img/php.png" alt=""></div>
+                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
+                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="font">
+                        <span>Font</span>
+                        <div class="font_box">
+                          <div class="font_name">
+                            <p>Noto Sans</p>
+                            <p>Open Sans</p>
+                            <p>Dancing Script</p>
+                          </div>
+                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
+                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          메인 페이지에 사용된 포인트 폰트</p>
+                        </div>
+                      </div>
+                      <!-- end of font -->
+                      <div class="color">
+                        <span>Color</span>
+                        <div class="color_box">
+                          <p>#EEB4BA</p>
+                        </div>
+                      </div>
+                      <!-- end of color -->
+                    </div>
+                    <!-- end of details -->
+                  </div>
+                  <!-- end of modal item -->
+                </div>
+                <!-- end of modal -->
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="slide_innerbox">
+                  <div class="img_box">
+                    <a href="#" class="imgLink">
+                      <img src="img/example.png" alt="">
+                      <i class="fa fa-search-plus"></i>
+                    </a>
+                  </div>
+                  <div class="txtBox">
+                    <h2>#03</h2>
                     <h1>My Schedule</h1>
-                    <p>제작기간 : 2021.02.08 - 02.18</p>
-                    <p>HTML5 CSS3 JQuery JavaScript PHP</p>
+                    <p>Sdhedule Managing site</p>
+                    <a href="#">View Website</a>
                     <button class="viewBtn" aria-haspopup="true">View Detail</button>
-
                   </div>
                 </div>
+                <!--  end of slide_innerbox -->
                 <div class="mask" role="dialog"></div>
-                  <div class="modal" role="alert">
-                    <button class="close" role="button">X</button>
+                <div class="modal" role="alert">
+                  <button class="close" role="button">X</button>
+                  <div class="modal_item">
+                    <div class="title_sec">
+                      <div class="title_img">
+                        <div><img src="img/gold_pc.png" alt=""></div>
+                      </div>
+                      <div class="title_desc">
+                        <h3>My Schedule</h3>
+                        <hr>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_subDesc">Responsive web site</p>
+                        <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
+
+                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <div class="participation">
+                          <p>기획<br>디자인<br>퍼블리싱</p>
+                          <p>100%<br>100%<br>100%</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <!-- end of title section -->
+                    <div class="details">
+                      <div class="tool">
+                        <span>Tools</span>
+                        <div class="tool_imgs">
+                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
+                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
+                          <div class="img_box"><img src="img/js.png" alt=""></div>
+                          <div class="img_box"><img src="img/php.png" alt=""></div>
+                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
+                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="font">
+                        <span>Font</span>
+                        <div class="font_box">
+                          <div class="font_name">
+                            <p>Noto Sans</p>
+                            <p>Open Sans</p>
+                            <p>Dancing Script</p>
+                          </div>
+                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
+                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          메인 페이지에 사용된 포인트 폰트</p>
+                        </div>
+                      </div>
+                      <!-- end of font -->
+                      <div class="color">
+                        <span>Color</span>
+                        <div class="color_box">
+                          <p>#EEB4BA</p>
+                        </div>
+                      </div>
+                      <!-- end of color -->
+                    </div>
+                    <!-- end of details -->
                   </div>
+                  <!-- end of modal item -->
+                </div>
+                <!-- end of modal -->
               </div>
               
               <div class="swiper-slide">
                 <div class="slide_innerbox">
-                  <div class="img_box"><img src="img/example.png" alt=""></div>
+                  <div class="img_box">
+                    <a href="#" class="imgLink">
+                      <img src="img/example.png" alt="">
+                      <i class="fa fa-search-plus"></i>
+                    </a>
+                  </div>
                   <div class="txtBox">
-                    <h2>#3</h2>
-                    <h1>My Schedule</h1>
-                    <p>제작기간 : 2021.02.19 - 02.28</p>
-                    <p>HTML5 CSS3 JQuery JavaScript</p>
+                    <h2>#04</h2>
+                    <h1>Web Planning Project</h1>
+                    <p>기획 프로젝트</p>
+                    
                     <button class="viewBtn" aria-haspopup="true">View Detail</button>
-
                   </div>
                 </div>
+                <!--  end of slide_innerbox -->
                 <div class="mask" role="dialog"></div>
-                  <div class="modal" role="alert">
-                    <button class="close" role="button">X</button>
+                <div class="modal" role="alert">
+                  <button class="close" role="button">X</button>
+                  <div class="modal_item">
+                    <div class="title_sec">
+                      <div class="title_img">
+                        <div><img src="img/gold_pc.png" alt=""></div>
+                      </div>
+                      <div class="title_desc">
+                        <h3>Web Planning Project</h3>
+                        <hr>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_subDesc">Responsive web site</p>
+                        <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
+
+                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <div class="participation">
+                          <p>기획<br>디자인<br>퍼블리싱</p>
+                          <p>100%<br>100%<br>100%</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <!-- end of title section -->
+                    <div class="details">
+                      <div class="tool">
+                        <span>Tools</span>
+                        <div class="tool_imgs">
+                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
+                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
+                          <div class="img_box"><img src="img/js.png" alt=""></div>
+                          <div class="img_box"><img src="img/php.png" alt=""></div>
+                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
+                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="font">
+                        <span>Font</span>
+                        <div class="font_box">
+                          <div class="font_name">
+                            <p>Noto Sans</p>
+                            <p>Open Sans</p>
+                            <p>Dancing Script</p>
+                          </div>
+                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
+                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          메인 페이지에 사용된 포인트 폰트</p>
+                        </div>
+                      </div>
+                      <!-- end of font -->
+                      <div class="color">
+                        <span>Color</span>
+                        <div class="color_box">
+                          <p>#EEB4BA</p>
+                        </div>
+                      </div>
+                      <!-- end of color -->
+                    </div>
+                    <!-- end of details -->
                   </div>
+                  <!-- end of modal item -->
+                </div>
+                <!-- end of modal -->
               </div>
               
               <div class="swiper-slide">
                 <div class="slide_innerbox">
-                  <div class="img_box"><img src="img/example.png" alt=""></div>
+                  <div class="img_box">
+                    <a href="#" class="imgLink">
+                      <img src="img/example.png" alt="">
+                      <i class="fa fa-search-plus"></i>
+                    </a>
+                  </div>
                   <div class="txtBox">
-                    <h2>#4</h2>
-                    <h1>Cine Ground</h1>
-                    <p>제작기간 : 2021.03.02 - 03.07</p>
-                    <p>HTML5 CSS3 JQuery JavaScript PHP</p>
+                    <h2>#05</h2>
+                    <h1>Portfolio</h1>
+                    <p>Portfolio site</p>
+                    
                     <button class="viewBtn" aria-haspopup="true">View Detail</button>
-
                   </div>
                 </div>
+                <!--  end of slide_innerbox -->
                 <div class="mask" role="dialog"></div>
-                  <div class="modal" role="alert">
-                    <button class="close" role="button">X</button>
-                  </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="slide_innerbox">
-                  <div class="img_box"><img src="img/example.png" alt=""></div>
-                  <div class="txtBox">
-                    <h2>#5</h2>
-                    <h1>기획 프로젝트</h1>
-                    <p>제작기간 : </p>
-                    <p>HTML5 CSS3 JQuery JavaScript</p>
-                    <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                <div class="modal" role="alert">
+                  <button class="close" role="button">X</button>
+                  <div class="modal_item">
+                    <div class="title_sec">
+                      <div class="title_img">
+                        <div><img src="img/gold_pc.png" alt=""></div>
+                      </div>
+                      <div class="title_desc">
+                        <h3>DPortfolio</h3>
+                        <hr>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_subDesc">Responsive web site</p>
+                        <p class="pro_period">제작기간 : 2021.03.07 - 2021.03.17</p>
 
+                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <div class="participation">
+                          <p>기획<br>디자인<br>퍼블리싱</p>
+                          <p>100%<br>100%<br>100%</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <!-- end of title section -->
+                    <div class="details">
+                      <div class="tool">
+                        <span>Tools</span>
+                        <div class="tool_imgs">
+                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
+                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
+                          <div class="img_box"><img src="img/js.png" alt=""></div>
+                          <div class="img_box"><img src="img/php.png" alt=""></div>
+                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
+                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="font">
+                        <span>Font</span>
+                        <div class="font_box">
+                          <div class="font_name">
+                            <p>Noto Sans</p>
+                            <p>Open Sans</p>
+                            <p>Dancing Script</p>
+                          </div>
+                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
+                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          메인 페이지에 사용된 포인트 폰트</p>
+                        </div>
+                      </div>
+                      <!-- end of font -->
+                      <div class="color">
+                        <span>Color</span>
+                        <div class="color_box">
+                          <p>#EEB4BA</p>
+                        </div>
+                      </div>
+                      <!-- end of color -->
+                    </div>
+                    <!-- end of details -->
                   </div>
+                  <!-- end of modal item -->
                 </div>
-                <div class="mask" role="dialog"></div>
-                  <div class="modal" role="alert">
-                    <button class="close" role="button">X</button>
-                  </div>
+                <!-- end of modal -->
               </div>
 
               
@@ -336,9 +595,24 @@
 
 
 
-		<section class="contact fullsection full4 section" pageNum="4"  id="4st"  data-anchor="4st">
+		<section class="contact fullsection full4 section" pageNum="4"  id="contact"  data-anchor="4st">
       <div class="contact_wrapper">
         <h1 class="contact_title">Contact</h1>
+        <div class="contact_box">
+          <div class="contact_me">
+            <h2>CONTACT ME!</h2>
+          </div>
+          <ul class="info_box">
+            <li class="tel">
+              <p>Tel.</p>
+              <p>010-2326-1869</p>
+            </li>
+            <li class="email">
+              <p>Email.</p>
+              <p>jayyy1224@gmail.com</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

@@ -179,13 +179,20 @@ $(document).ready(function() {
     navigation:true,
     navigationPosition:'right',
 		keyboardScrolling: true,
-		// autoScrolling: true,
+		autoScrolling: true,
 		controlArrows: true,
-		
+		afterRender: function(){
+			$('#fullpage .section').each(function(index, value) {
+					var id = $(this).attr('id');
+					if($(this).attr('data-anchor') != undefined){
+							$(this).attr('id','fullpaged-' + id);
+					}
+			});
+		},
 		anchors:['1st', '2st', '3st', '4st'],
 		afterLoad:function(anchorLink, index){
 		}
+		
 	});
-
 
 });
