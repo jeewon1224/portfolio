@@ -10,7 +10,8 @@
 ul, ol { margin-top: 0;}
 ul ul { margin-bottom: 0; }
 li { font-size: 13px; margin: 5px 0px 10px 0px; }
-html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;font-family: 'Open Sans', sans-serif;}
+html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden; font-family: 'Noto Sans KR', sans-serif, 'Open Sans', sans-serif; }
+/* 'Open Sans', sans-serif; */
 img{display: block;}
 h1, h2, h3, h4, h5, h6{margin:0}
 .clear:after{clear: both; display: block; content: '';}
@@ -125,7 +126,7 @@ a{text-decoration: none;}
     width: 100%;
     height: 2px;
   
-    background-color: #A3C1FF;
+    background-color: #111;
   
     transition-duration: .25s;
   }
@@ -246,7 +247,7 @@ a{text-decoration: none;}
 
 .about {width: 100%; height: 100%; position: relative;}
 .about_wrapper{width: 100%; max-width: 1400px; margin: auto;height: 100%; display: flex; align-items: center; justify-content: center;}
-.about_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);}
+.about_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);  font-family: 'Poppins', sans-serif;}
 
 .about .profile_box{width: 40%; height: 100%; _margin: auto; text-align: center; display: flex; flex-direction: column; flex-direction: column;
   align-items: center; justify-content: center;}
@@ -299,7 +300,7 @@ a{text-decoration: none;}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* works 페이지 */
 .works{width: 100%; height: 100%; position: relative;}
-.works_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);}
+.works_title{position: absolute; top: calc(50% - 38px); left: 0px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
 .works_wrapper{height: 100%; width: 100%; margin: auto;}
 .swiper-container {width: 90%; height: 100%; }
 
@@ -335,13 +336,21 @@ a{text-decoration: none;}
 .slide_innerbox .img_box:hover img{transform: scale(1.03); opacity: 0.8;}
 
 .slide_innerbox .txtBox{width: 30%; display: flex; flex-direction: column; justify-content: center; padding: 10px; text-align: right; box-shadow: 5px 5px 5px #eee; margin-left: 10px; position: relative;}
-.slide_innerbox .txtBox h1, .slide_innerbox .txtBox h2{margin: 0; color: #555;}
 
-.slide_innerbox .txtBox h1{font-size: 50px;}
-.slide_innerbox .txtBox>p{font-family: 'Noto Sans KR', sans-serif;}
+.txtBox .hidden_img{display: none; width: 100%;}
+.txtBox .hidden_img .hidden_link{display: inline-block; width: auto; height: auto;text-align: center; position: relative;}
+.txtBox .hidden_img .hidden_link i{position: absolute; top: calc(50% - 8px); color: #fff; font-size: 40px; opacity: 1; transition: all 0.4s;}
+.txtBox .hidden_img .hidden{width: 100%; background: url(../img/gold_bg.png) no-repeat; background-size: cover; _background-position: 50%; }
+.txtBox .hidden_img .hidden img{width: 100%; height: 100%; }
 
 
-.txtBox .viewBtn{_position: absolute; height: auto; color: #555; cursor: pointer;  border: none; outline: 0; background: none; display: inline-block;  position: absolute; bottom: 100px; right: 10px; transition: all 0.4s; }
+.slide_innerbox .txtBox h2{margin: 0; color: #555; font-family: 'Open Sans', sans-serif;}
+
+.slide_innerbox .txtBox h1{font-size: 50px; font-family: 'Poppins',serif; margin: 0; color: #555;}
+.slide_innerbox .txtBox>p{color: #555;}
+
+
+.txtBox .viewBtn{_position: absolute; height: auto; color: #555; cursor: pointer;  border: none; outline: 0; background: none; display: inline-block;  position: absolute; bottom: 100px; right: 10px; transition: all 0.4s;  font-family: 'Open Sans', sans-serif;;}
 
 .txtBox .viewBtn:hover{color: #111; font-weight: bold;}
 
@@ -349,7 +358,7 @@ a{text-decoration: none;}
 /* 
   // Close Button */
 
-  .close{position: absolute; top: 0; right: 0; width: 35px; height: 30px;  background: #000; color: #fff; cursor: pointer; border: 0;}
+  .close{position: absolute; top: 0; right: 0; width: 35px; height: 30px;  background: #000; color: #fff; cursor: pointer; border: 0; z-index: 10;}
 
   /* // The mask */
 
@@ -367,6 +376,10 @@ a{text-decoration: none;}
 
 /* modal 창 내부 스타일링 */
 .modal_item{width: 100%; height: 100%; overflow-y: scroll;}
+.modal_item::-webkit-scrollbar{width: 15px;}
+.modal_item::-webkit-scrollbar-thumb{background: #ddd;}
+.modal_item::-webkit-scrollbar-track{background: #111;}
+
 .modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; background: #ffc6cc; padding: 30px 30px 0 30px;}
 .modal_item .title_sec .title_img{width: 50%; height: auto; }
 .modal_item .title_sec .title_img img{width: 100%;}
@@ -409,6 +422,14 @@ a{text-decoration: none;}
 .color .color_box{width: 70%; display: flex; align-items: center;}
 .color .color_box p{color: #eeb4ba; font-weight: 500;}
 
+.details .main_img{width: 100%; display: flex; margin-top: 40px; height: fit-content; display: none;}
+.details .main_img span{display: inline-block; width: 20%; display: flex; justify-content: center; text-align: center;}
+.main_img .img_box{width: 80%; display: flex; align-items: center;}
+.main_img .img_box>div{width: 100%; _padding: 5px;}
+.main_img .img_box>div>img{width: 100%;}
+
+
+
 .details>div{height: 100px;}
 
 
@@ -426,17 +447,27 @@ a{text-decoration: none;}
 
 
 /* 컨택트 섹션 */
-.contact{width: 100%; height: 100%;}
+.contact{width: 100%; height: 100%; background: url(../img/paper3.png); background-size: cover; }
 .contact_wrapper{width: 100%;
   height: 100%;
   margin: auto;
   max-width: 1400px;
   padding: 150px 0;}
-.contact_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);}
-
+.contact_title{position: absolute; top: calc(50% - 59px); left: 0px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
+.contact_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .contact .contact_me h2{font-family: 'Poppins', sans-serif; font-size: 60px;}
 
 
-.contact .info_box{}
-.contact .info_box .tel{display: flex; flex-direction: row;}
-.contact .info_box .email{display: flex; flex-direction: row;}
+.contact .info_box{position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.contact .info_box .tel,
+.contact .info_box .email{display: flex; flex-direction: row; border-bottom: 1px solid #111; width: 500px;justify-content: space-between; font-size: 24px; margin-bottom: 10px; }
+.contact .info_box .tel p:last-child,
+.contact .info_box .email p:last-child{}
+

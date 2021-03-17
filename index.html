@@ -25,7 +25,7 @@
     <ul class="menu__box">
       <li class="menu_list"><a class="menu__item menu__item1" href="#1st">HOME</a></li>
 			<li class="menu_list"><a class="menu__item menu__item2" href="#2st">ABOUT</a></li>
-			<li class="menu_list"><a class="menu__item menu__item3" href="#3st">WORKS</a></li>
+			<li class="menu_list"><a class="menu__item menu__item3" href="#3st">WORK</a></li>
 			<li class="menu_list"><a class="menu__item menu__item4" href="#4st">CONTACT</a></li>
     </ul>
   </header>
@@ -70,7 +70,6 @@
             스마트 웹디자인 콘텐츠 개발(웹퍼블리셔) 과정 수료</p>
             
           </div>
-          <span class="underline2"></span>
           
         </div>
         <div class="skill_list">
@@ -134,7 +133,7 @@
 
 		<section class="fullsection full3 works section" pageNum="3"  id="works"  data-anchor="3st">
       <div class="works_wrapper">
-        <h1 class="works_title">Works</h1>
+        <h1 class="works_title">PORTFOLIO</h1>
         
         <div class="swiper-container">
       
@@ -149,6 +148,12 @@
                       </a>
                     </div>
                     <div class="txtBox">
+                      <div class="hidden_img">
+                        <a href="#" class="hidden_link"><i class="fa fa-search-plus"></i></a>
+                        <div class="hidden">
+                          <!-- <img src="img/gold_bg.png" alt=""> -->
+                        </div>
+                      </div>
                       <h2>#01</h2>
                       <h1>Database</h1>
                       <p>Database Project</p>
@@ -204,7 +209,7 @@
                               <p>Dancing Script</p>
                             </div>
                             <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                            깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                            깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
                             메인 페이지에 사용된 포인트 폰트</p>
                           </div>
                         </div>
@@ -216,6 +221,14 @@
                           </div>
                         </div>
                         <!-- end of color -->
+                        <div class="main_img">
+                          <span>Main Image</span>
+                          <div class="img_box">
+                            <div>
+                              <img src="img/gold_pc.png" alt="골드 웹사이트 메인 페이지">
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <!-- end of details -->
                     </div>
@@ -287,7 +300,7 @@
                             <p>Dancing Script</p>
                           </div>
                           <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
                           메인 페이지에 사용된 포인트 폰트</p>
                         </div>
                       </div>
@@ -369,7 +382,7 @@
                             <p>Dancing Script</p>
                           </div>
                           <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
                           메인 페이지에 사용된 포인트 폰트</p>
                         </div>
                       </div>
@@ -451,7 +464,7 @@
                             <p>Dancing Script</p>
                           </div>
                           <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
                           메인 페이지에 사용된 포인트 폰트</p>
                         </div>
                       </div>
@@ -533,7 +546,7 @@
                             <p>Dancing Script</p>
                           </div>
                           <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가족성 좋은 영문 폰트 <br>
+                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
                           메인 페이지에 사용된 포인트 폰트</p>
                         </div>
                       </div>
@@ -597,7 +610,7 @@
 
 		<section class="contact fullsection full4 section" pageNum="4"  id="contact"  data-anchor="4st">
       <div class="contact_wrapper">
-        <h1 class="contact_title">Contact</h1>
+        <!-- <h1 class="contact_title">CONTACT</h1> -->
         <div class="contact_box">
           <div class="contact_me">
             <h2>CONTACT ME!</h2>
@@ -605,7 +618,7 @@
           <ul class="info_box">
             <li class="tel">
               <p>Tel.</p>
-              <p>010-2326-1869</p>
+              <p>010. 2326. 1869</p>
             </li>
             <li class="email">
               <p>Email.</p>
@@ -637,10 +650,10 @@
  <script>
    var swiper = new Swiper('.swiper-container', {
     loop: true,
-    // autoplay: 
-    // {
-    //   delay: 3000,
-    // },
+    autoplay: 
+    {
+      delay: 3000,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -651,13 +664,13 @@
     },
 });
 
-// $(".swiper-slide").hover(
-//   function(){
-//     swiper.autoplay.stop();
-//   }, function(){
-//     swiper.autoplay.start();
-//   }
-// );
+$(".swiper-slide").hover(
+  function(){
+    swiper.autoplay.stop();
+  }, function(){
+    swiper.autoplay.start();
+  }
+);
  </script>
 
 
