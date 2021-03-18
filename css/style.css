@@ -300,7 +300,7 @@ a{text-decoration: none;}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* works 페이지 */
 .works{width: 100%; height: 100%; position: relative;}
-.works_title{position: absolute; top: calc(50% - 38px); left: 0px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
+.works_title{position: absolute; top: calc(50% - 38px); left: -25px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
 .works_wrapper{height: 100%; width: 100%; margin: auto;}
 .swiper-container {width: 90%; height: 100%; }
 
@@ -349,12 +349,17 @@ a{text-decoration: none;}
 .slide_innerbox .txtBox h1{font-size: 50px; font-family: 'Poppins',serif; margin: 0; color: #555;}
 .slide_innerbox .txtBox>p{color: #555;}
 
+.txtBox .btns{width: 100%; height: auto; margin-top: 10px; display: flex;
+  justify-content: space-between;}
+.txtBox .viewBtn{height: auto; color: #555; cursor: pointer;  border: 1px solid #555; outline: 0; background: none; display: inline-block; _position: absolute; _bottom: 100px; _right: 10px; transition: all 0.4s;  font-family: 'Open Sans', sans-serif;   width: calc(50% - 1px); font-size: 16px;}
+.txtBox .git_btn{height: auto; width: calc(50% - 1px); display: inline-block; font-family: 'Open Sans', sans-serif; font-size: 16px; color: #555; border: 1px solid #555; text-align: center; transition: all .4s;}
 
-.txtBox .viewBtn{_position: absolute; height: auto; color: #555; cursor: pointer;  border: none; outline: 0; background: none; display: inline-block;  position: absolute; bottom: 100px; right: 10px; transition: all 0.4s;  font-family: 'Open Sans', sans-serif;;}
+.txtBox .viewBtn:hover{background: #555; color: #fff;}
+.txtBox .viewBtn:active{transform: scale(0.9);}
 
-.txtBox .viewBtn:hover{color: #111; font-weight: bold;}
+.txtBox .git_btn:hover{background: #555; color: #fff;}
 
-  .txtBox .viewBtn:active{transform: scale(0.9);}
+
 /* 
   // Close Button */
 
@@ -381,16 +386,24 @@ a{text-decoration: none;}
 .modal_item::-webkit-scrollbar-track{background: #111;}
 
 .modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; background: #ffc6cc; padding: 30px 30px 0 30px;}
+.modal_item.ow .title_sec {background: #fbb14f;}
+.modal_item.sche .title_sec {background: #00a0a0b3;}
+.modal_item.api .title_sec {background: #00ffd073;}
+
+
+
+
+
 .modal_item .title_sec .title_img{width: 50%; height: auto; }
 .modal_item .title_sec .title_img img{width: 100%;}
 
-.modal_item .title_desc{width: 50%; height: auto; padding: 0 30px; position: relative; text-align: left; color: #fff;}
+.modal_item .title_desc{width: 50%; height: auto; padding-left: 30px; position: relative; text-align: left; color: #fff;}
 .modal_item .title_desc h3{font-size: 50px;}
 .modal_item .title_desc hr{border: 1px solid #fff; margin: 20px 0;}
 .modal_item .title_desc>p{font-size: 18px; margin-bottom: 5px;}
 .modal_item .title_desc .pro_desc{font-family: 'Noto Sans KR', sans-serif; margin-bottom: 100px;}
 .modal_item .title_desc .pro_subDesc, .modal_item .title_desc .pro_period{text-align: right; font-family: 'Noto Sans KR', sans-serif;}
-.modal_item .title_desc>a{color: #fff; position: absolute; bottom: 150px; right: 30px; font-size: 15px; transition: all 0.4s;}
+.modal_item .title_desc>a{color: #fff; position: absolute; bottom: 150px; right:0; font-size: 15px; transition: all 0.4s;}
 .modal_item .title_desc>a>i{font-size: 17px; margin-left: 5px; transition: all 0.4s;}
 .modal_item .title_desc>a:hover >i{color: #555;}
 
@@ -421,6 +434,12 @@ a{text-decoration: none;}
 .details .color span{display: inline-block; width: 30%; display: flex; justify-content: center; align-items: center;}
 .color .color_box{width: 70%; display: flex; align-items: center;}
 .color .color_box p{color: #eeb4ba; font-weight: 500;}
+.modal_item.ow .color .color_box p{color: #fa9c1e; font-weight: 500;}
+.modal_item.sche .color .color_box p{color: #008C8C; font-weight: 500;}
+.modal_item.api .color .color_box p{color: #00ffd0; font-weight: 500;}
+
+
+
 
 .details .main_img{width: 100%; display: flex; margin-top: 40px; height: fit-content; display: none;}
 .details .main_img span{display: inline-block; width: 20%; display: flex; justify-content: center; text-align: center;}

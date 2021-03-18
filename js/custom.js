@@ -159,6 +159,7 @@ $(document).ready(function () {
         $(".viewBtn").on("click", function () {
           $(".mask").addClass("active");
           $.fn.fullpage.setAllowScrolling(false);
+          
         });
 
         // 모달창 닫기 기능
@@ -181,3 +182,49 @@ $(document).ready(function () {
     },
   });
 });
+
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  autoplay: 
+  {
+    delay: 3000,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    clickable : true,
+      el: '.swiper-pagination',
+  },
+});
+
+$(".swiper-slide").hover(
+
+  function(){
+  swiper.autoplay.stop();
+}
+// , function(){
+//   swiper.autoplay.start();
+// }
+);
+
+
+$(".viewBtn").click(function(){
+  $(this).toggleClass('on');
+  //alert('abc');
+  if($(this).hasClass('on')){
+    swiper.autoplay.stop();
+  }
+  
+});
+
+
+var item = $('.viewBtn').on('click', function() {
+  var idx = $(item).index();
+  console.log(idx);
+});
+
+
+
