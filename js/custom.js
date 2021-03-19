@@ -136,6 +136,55 @@ $(".typed-cursor").hide();
 
 // }
 
+
+
+
+
+
+var swiper = new Swiper('.swiper-container', {
+  
+    loop: true,
+    // keyboard :true,
+    allowTouchMove: true,
+    autoplay: 
+    {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      clickable : true,
+        el: '.swiper-pagination',
+    },
+    
+  });
+  
+
+
+
+
+
+
+  $(".swiper-slide").hover(
+
+    function(){
+    swiper.autoplay.stop();
+  }
+  , function(){
+    swiper.autoplay.start();
+  }
+  
+  );
+  
+ 
+
+
+
+
+
 $(document).ready(function () {
   $("#fullpage").fullpage({
     verticalCentered: false,
@@ -154,18 +203,33 @@ $(document).ready(function () {
     },
     anchors: ["1st", "2st", "3st", "4st"],
     afterLoad: function (anchorLink, index) {
+
       if (anchorLink == "3st") {
         // 모달창 기능
         $(".viewBtn").on("click", function () {
           $(".mask").addClass("active");
           $.fn.fullpage.setAllowScrolling(false);
           
+
+          if($(".mask").hasClass("active")){
+            swiper.autoplay.stop();
+            swiper.allowTouchMove.disable();
+            // swiper.keyboard.disable();
+
+            
+            // $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('display','none');
+           
+          }
         });
+
+        
 
         // 모달창 닫기 기능
         function closeModal() {
           $(".mask").removeClass("active");
           $.fn.fullpage.setAllowScrolling(true);
+          swiper.autoplay.start();
+          // $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('display','block');
         }
 
         // 클릭,키보드 esc 로 닫기
@@ -178,53 +242,71 @@ $(document).ready(function () {
             closeModal();
           }
         });
+
+
+        
+
       }
     },
   });
 });
 
 
-var swiper = new Swiper('.swiper-container', {
-  loop: true,
-  autoplay: 
-  {
-    delay: 3000,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    clickable : true,
-      el: '.swiper-pagination',
-  },
-});
+// var swiper = new Swiper('.swiper-container', {
+  
+//   loop: true,
+//   keyboard :true,
+//   allowTouchMove: true,
+//   autoplay: 
+//   {
+//     delay: 3000,
+//     disableOnInteraction: true,
+//   },
+//   navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     clickable : true,
+//       el: '.swiper-pagination',
+//   },
+  
+// });
 
-$(".swiper-slide").hover(
 
-  function(){
-  swiper.autoplay.stop();
-}
+
+
+// $(".swiper-slide").hover(
+
+//   function(){
+//   swiper.autoplay.stop();
+// }
 // , function(){
 //   swiper.autoplay.start();
 // }
-);
+// );
 
 
-$(".viewBtn").click(function(){
-  $(this).toggleClass('on');
-  //alert('abc');
-  if($(this).hasClass('on')){
-    swiper.autoplay.stop();
-  }
+// $(".viewBtn").click(function(){
+//   $(this).toggleClass('on');
+//   //alert('abc');
+//   if($(this).hasClass('on')){
+//     swiper.autoplay.stop();
+//   }
   
-});
+// });
 
 
-var item = $('.viewBtn').on('click', function() {
-  var idx = $(item).index();
-  console.log(idx);
-});
+// $(".viewBtn").click(function() {
+//   (this).swiper.autoplay.stop();
+// }, function() {
+//   (this).swiper.autoplay.start();
+// });
+ 
+
+// if($('.mask').hasClass('active')){
+//   swiper.allowTouchMove.false();
+// }
 
 
 

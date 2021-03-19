@@ -369,7 +369,7 @@ a{text-decoration: none;}
 
 
   .mask {_position: fixed; width: 100%; height: 100%; background: rgba(75, 75, 75, 0.7); z-index: 50; visibility: hidden; opacity: 0; transition: 0.7s; position: fixed; /* top: 0; */ /* left: 0; */}
-.modal {_position: fixed; top: 50%; left: 50%; width: 1200px; height: 800px; background: #bdc3c7; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out; _transform: translateY(45px);}
+.modal {_position: fixed; top: 50%; left: 50%; width: 1200px; height: 800px; background: #fff; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out; _transform: translateY(45px);}
 
 
 /* // Class Active */
@@ -381,14 +381,15 @@ a{text-decoration: none;}
 
 /* modal 창 내부 스타일링 */
 .modal_item{width: 100%; height: 100%; overflow-y: scroll;}
-.modal_item::-webkit-scrollbar{width: 15px;}
-.modal_item::-webkit-scrollbar-thumb{background: #ddd;}
+.modal_item::-webkit-scrollbar{width: 5px;}
+.modal_item::-webkit-scrollbar-thumb{background: #999;}
 .modal_item::-webkit-scrollbar-track{background: #111;}
 
-.modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; background: #ffc6cc; padding: 30px 30px 0 30px;}
-.modal_item.ow .title_sec {background: #fbb14f;}
-.modal_item.sche .title_sec {background: #00a0a0b3;}
-.modal_item.api .title_sec {background: #00ffd073;}
+.modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; background: #fff; padding: 30px 30px 0 30px;}
+.modal_item.db .title_sec {background: #ffd9dd;}
+.modal_item.ow .title_sec {background: #ffd295;}
+.modal_item.sche .title_sec {background: #008c8c66;}
+.modal_item.api .title_sec {background: #6ff5dc59;}
 
 
 
@@ -397,15 +398,15 @@ a{text-decoration: none;}
 .modal_item .title_sec .title_img{width: 50%; height: auto; }
 .modal_item .title_sec .title_img img{width: 100%;}
 
-.modal_item .title_desc{width: 50%; height: auto; padding-left: 30px; position: relative; text-align: left; color: #fff;}
+.modal_item .title_desc{width: 50%; height: auto; padding-left: 30px; position: relative; text-align: left; color: #333;}
 .modal_item .title_desc h3{font-size: 50px;}
-.modal_item .title_desc hr{border: 1px solid #fff; margin: 20px 0;}
+.modal_item .title_desc hr{border: 1px solid #333; margin: 20px 0;}
 .modal_item .title_desc>p{font-size: 18px; margin-bottom: 5px;}
 .modal_item .title_desc .pro_desc{font-family: 'Noto Sans KR', sans-serif; margin-bottom: 100px;}
 .modal_item .title_desc .pro_subDesc, .modal_item .title_desc .pro_period{text-align: right; font-family: 'Noto Sans KR', sans-serif;}
-.modal_item .title_desc>a{color: #fff; position: absolute; bottom: 150px; right:0; font-size: 15px; transition: all 0.4s;}
+.modal_item .title_desc>a{color: #333; position: absolute; bottom: 150px; right:0; font-size: 15px; transition: all 0.4s;}
 .modal_item .title_desc>a>i{font-size: 17px; margin-left: 5px; transition: all 0.4s;}
-.modal_item .title_desc>a:hover >i{color: #555;}
+.modal_item .title_desc>a:hover >i{color: #fff;}
 
 
 .title_desc .participation{display: flex; font-family: 'Noto Sans KR', sans-serif; text-align: right; justify-content: flex-end;}

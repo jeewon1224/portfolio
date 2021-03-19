@@ -211,7 +211,7 @@
 
   .swiper-button-next.nextBtn,
   .swiper-button-prev.prevBtn {
-    display: block;
+    display: none;
   }
 }
 
@@ -396,6 +396,14 @@
   .font .font_box .font_desc {
     display: none;
   }
+
+
+  .swiper-button-next.nextBtn,
+  .swiper-button-prev.prevBtn {
+    display: none;
+  }
+
+
 
   /* contact */
   .contact_wrapper {
