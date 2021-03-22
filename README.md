@@ -15,7 +15,6 @@
 - CSS 8.6%
 - JavaScript 84.6%
 </br>
-</br>
 
 ## Used Plugin
 Fullpage.js</br>
