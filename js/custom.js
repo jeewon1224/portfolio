@@ -168,16 +168,16 @@ var swiper = new Swiper('.swiper-container', {
 
 
 
-  $(".swiper-slide").hover(
+  // $(".swiper-slide").hover(
 
-    function(){
-    swiper.autoplay.stop();
-  }
-  , function(){
-    swiper.autoplay.start();
-  }
+  //   function(){
+  //   swiper.autoplay.stop();
+  // }
+  // , function(){
+  //   swiper.autoplay.start();
+  // }
   
-  );
+  // );
   
  
 
@@ -209,15 +209,15 @@ $(document).ready(function () {
         $(".viewBtn").on("click", function () {
           $(".mask").addClass("active");
           $.fn.fullpage.setAllowScrolling(false);
-          
+          $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('z-index','0');
+          $(".swiper-pagination").css('z-index','0');
 
           if($(".mask").hasClass("active")){
             swiper.autoplay.stop();
-            swiper.allowTouchMove.disable();
+            swiper.allowTouchMove.disable;
             // swiper.keyboard.disable();
 
             
-            // $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('display','none');
            
           }
         });
@@ -229,7 +229,11 @@ $(document).ready(function () {
           $(".mask").removeClass("active");
           $.fn.fullpage.setAllowScrolling(true);
           swiper.autoplay.start();
-          // $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('display','block');
+          $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('z-index','10');
+          $(".swiper-pagination").css('z-index','10');
+
+          // swiper.allowTouchMove.able;
+
         }
 
         // 클릭,키보드 esc 로 닫기

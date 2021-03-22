@@ -369,7 +369,7 @@ a{text-decoration: none;}
 
 
   .mask {_position: fixed; width: 100%; height: 100%; background: rgba(75, 75, 75, 0.7); z-index: 50; visibility: hidden; opacity: 0; transition: 0.7s; position: fixed; /* top: 0; */ /* left: 0; */}
-.modal {_position: fixed; top: 50%; left: 50%; width: 1200px; height: 800px; background: #fff; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out; _transform: translateY(45px);}
+.modal {_position: fixed; top: 50%; left: 50%; width: 95%; height: 800px; background: #fff; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out; _transform: translateY(45px);}
 
 
 /* // Class Active */

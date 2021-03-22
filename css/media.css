@@ -7,9 +7,9 @@
     padding: 100px;
   }
 
-  .modal {
+  /* .modal {
     width: 800px;
-  }
+  } */
   .modal_item .title_desc > p {
     font-size: 15px;
   }
@@ -80,9 +80,9 @@
   .txtBox .viewBtn {
     bottom: 20%;
   }
-  .modal {
+  /* .modal {
     width: 600px;
-  }
+  } */
   .modal_item .title_sec {
     height: 80%;
     padding: 15px 15px 0 15px;
@@ -171,9 +171,9 @@
 }
 
 @media screen and (max-width: 700px) {
-  .modal {
+  /* .modal {
     width: 500px;
-  }
+  } */
   .modal_item .title_sec {
     height: 400px;
   }
@@ -217,9 +217,9 @@
 
 @media screen and (max-width: 600px) {
   /* work */
-  .modal {
+  /* .modal {
     width: 430px;
-  }
+  } */
   .font .font_box {
     font-size: 12px;
   }
@@ -336,7 +336,7 @@
   }
 
   .modal {
-    width: 80%;
+    width: 90%;
     height: 80%;
   }
   .modal_item .title_sec {
@@ -354,7 +354,7 @@
     margin: 10px 0;
   }
   .modal_item .title_desc .pro_desc {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     text-align: justify;
     font-size: 14px;
   }
@@ -431,7 +431,7 @@
 
 @media screen and (max-width: 350px) {
   .slide_innerbox .txtBox {
-    width: 250px;
+    width: 270px;
   }
 
   .contact .contact_me h2 {
