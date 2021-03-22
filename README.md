@@ -5,7 +5,7 @@
 ## 주요 기능
 ![pf](https://user-images.githubusercontent.com/77706798/111947896-9aaad280-8b21-11eb-8c47-35c836a4d495.png)
 
-간단한 소개와 사용 가능한 스킬
+간단한 소개와 사용 가능한 스킬</br>
 개인 작업물과 각 작업물의 Git 조회 가능
 
 
@@ -16,12 +16,12 @@
 
 
 ## Used Plugin
-Fullpage.js
-swiper slider
+Fullpage.js</br>
+swiper slider</br>
 typed.js
 
 
 ## Contribution
-기획 100%
-디자인 100%
+기획 100%</br>
+디자인 100%</br>
 퍼블리싱 100%
