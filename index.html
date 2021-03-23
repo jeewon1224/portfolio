@@ -16,17 +16,17 @@
 <body>
   
   
-  <header class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
+  <header class="hamburger_menu">
+    <input id="menu_toggle" type="checkbox" />
+    <label class="menu_btn" for="menu_toggle">
       <span></span>
     </label>
 
-    <ul class="menu__box">
-      <li class="menu_list"><a class="menu__item menu__item1" href="#1st">HOME</a></li>
-			<li class="menu_list"><a class="menu__item menu__item2" href="#2st">ABOUT</a></li>
-			<li class="menu_list"><a class="menu__item menu__item3" href="#3st">WORK</a></li>
-			<li class="menu_list"><a class="menu__item menu__item4" href="#4st">CONTACT</a></li>
+    <ul class="menu_box">
+      <li class="menu_list"><a class="menu_item menu__item1" href="#1st">HOME</a></li>
+			<li class="menu_list"><a class="menu_item menu__item2" href="#2st">ABOUT</a></li>
+			<li class="menu_list"><a class="menu_item menu__item3" href="#3st">PORTFOLIO</a></li>
+			<li class="menu_list"><a class="menu_item menu__item4" href="#4st">CONTACT</a></li>
     </ul>
   </header>
   
@@ -60,7 +60,7 @@
               <img src="img/profile.JPG" alt="">
             </div>
           </div>
-          <span class="underline"></span>
+          <!-- <span class="underline"></span> -->
           <div class="bottom_box">
             <p class="hello">안녕하세요. 웹퍼블리셔 김지원입니다.</p>
 
@@ -72,6 +72,7 @@
           </div>
           
         </div>
+
         <div class="skill_list">
           <div class="html">
             <div class="skill_icon"><img src="img/HTML.png" alt="html icon"></div>
@@ -79,8 +80,8 @@
               
               <p>문서를 구조화하여 웹표준과 웹접근성을 준수하며 작업합니다.</p>
               <div class="bar htmlbar">
-                <div class="filledBar"></div>
-                <div class="hiddenBar"></div>
+                <div class="filled_bar"></div>
+                <div class="hidden_bar"></div>
                 <span class="percent">90%</span>
               </div>
             </div>
@@ -92,8 +93,8 @@
               
               <p>디자인을 언어 상에서 표현할 수 있도록 CSS3 웹 디자인 언어를 사용하며 미디어 쿼리를 통해 반응형 제작이 가능합니다.</p>
               <div class="bar cssbar">
-                <div class="filledBar"></div>
-                <div class="hiddenBar"></div>
+                <div class="filled_bar"></div>
+                <div class="hidden_bar"></div>
                 <span class="percent">90%</span>
               </div>
             </div>
@@ -105,21 +106,24 @@
               
               <p>Java Script와 JQuery를 활용하여 간단한 동적 이벤트를 구현하고 라이브러리를 사용할 수 있습니다.</p>
               <div class="bar jsbar">
-                <div class="filledBar"></div>
-                <div class="hiddenBar"></div>
+                <div class="filled_bar"></div>
+                <div class="hidden_bar"></div>
                 <span class="percent">60%</span>
               </div>
             </div>
           </div>
           <!-- end of js -->
           <div class="photoshop">
-            <div class="skill_icon"><img src="img/photoshop_CC_icon.png" alt="ps icon"></div>
+            <div class="skill_icon">
+              <span>HTML</span>
+              <!-- <img src="img/photoshop_CC_icon.png" alt="ps icon"> -->
+            </div>
             <div class="skill_txt">
               
               <p>기본적인 포토샵 작업이 가능합니다.</p>
               <div class="bar psbar">
-                <div class="filledBar"></div>
-                <div class="hiddenBar"></div>
+                <div class="filled_bar"></div>
+                <div class="hidden_bar"></div>
                 <span class="percent">50%</span>
               </div>
             </div>
@@ -140,10 +144,10 @@
           <!-- swiper slides -->
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <div class="slide_innerbox">
+                  <div class="slide_innerbox db">
                     <div class="img_box">
                       <a href="http://rlawldnjs1224.dothome.co.kr/Gold" target="_blank" title="Database project site" class="imgLink">
-                        <img src="img/gold.png" alt="">
+                        <img src="img/db.jpg" alt="">
                         <i class="fa fa-search-plus"></i>
                       </a>
                     </div>
@@ -157,7 +161,7 @@
                       <h1>Database</h1>
                       <p>Database Project</p>
                       <div class="btns">
-                        <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                        <button class="view_btn" aria-haspopup="true">View Detail</button>
                         <a href="https://github.com/jeewon1224/dbproject" class="git_btn" target="_blank">View Github</a>
                       </div>
                     </div>
@@ -175,11 +179,11 @@
                         <div class="title_desc">
                           <h3>Database Project</h3>
                           <hr>
-                          <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                          <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, PHP와 mariaDB를 활용하여 데이터 관리 등 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
                           <p class="pro_subDesc">Responsive web site</p>
                           <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
-                          <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                          <a href="http://rlawldnjs1224.dothome.co.kr/Gold">View Website<i class="fa fa-arrow-circle-right"></i></a>
                           <div class="participation">
                             <p>기획<br>디자인<br>퍼블리싱</p>
                             <p>100%<br>100%<br>100%</p>
@@ -192,25 +196,27 @@
                         <div class="tool">
                           <span>Tools</span>
                           <div class="tool_imgs">
-                            <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                            <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                            <div class="img_box"><img src="img/js.png" alt=""></div>
-                            <div class="img_box"><img src="img/php.png" alt=""></div>
-                            <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
-                            <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                            <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                            <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                            <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
+                            <div class="img_box"><img src="img/php.png" alt="php 아이콘"></div>
+                            <div class="img_box"><img src="img/mariaDB.png" alt="mariaDB 아이콘"></div>
+                            <div class="img_box"><img src="img/photoshop_CC_icon.png" alt="포토샵 아이콘"></div>
                           </div>
                         </div>
                         <div class="font">
                           <span>Font</span>
-                          <div class="font_box">
+                          <div class="font_box font_box_db">
                             <div class="font_name">
                               <p>Noto Sans</p>
                               <p>Open Sans</p>
                               <p>Dancing Script</p>
                             </div>
-                            <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                            깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                            메인 페이지에 사용된 포인트 폰트</p>
+                            <div class="font_desc">
+                              <p>깔끔한 이미지의 가독성 좋은 한글 폰트</p>
+                              <p>깔끔한 이미지의 가독성 좋은 영문 폰트</p>
+                              <p>메인 페이지에 사용된 포인트 폰트</p>
+                            </div>
                           </div>
                         </div>
                         <!-- end of font -->
@@ -240,10 +246,10 @@
               </div>
               
               <div class="swiper-slide"> 
-                <div class="slide_innerbox">
+                <div class="slide_innerbox ow">
                   <div class="img_box">
                     <a href="http://rlawldnjs1224.dothome.co.kr/overwatch" class="imgLink">
-                      <img src="img/overwatch.png" alt="">
+                      <img src="img/overwatch.png" alt="오버워치 사이트로 이동">
                       <i class="fa fa-search-plus"></i>
                     </a>
                   </div>
@@ -257,7 +263,7 @@
                     <h1>Overwatch</h1>
                     <p>Web Renewal</p>
                     <div class="btns">
-                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                      <button class="view_btn" aria-haspopup="true">View Detail</button>
                       <a href="https://github.com/jeewon1224/overwatch" class="git_btn" target="_blank">View Github</a>
                     </div>
                   </div>
@@ -269,16 +275,16 @@
                   <div class="modal_item ow">
                     <div class="title_sec">
                       <div class="title_img">
-                        <div><img src="img/overwatch_pc.png" alt=""></div>
+                        <div><img src="img/overwatch_pc.png" alt="오버워치 메인 이미지"></div>
                       </div>
                       <div class="title_desc">
                         <h3>Overwatch</h3>
                         <hr>
-                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 클론 코딩하였습니다.</p>
+                        <p class="pro_desc">기존의 오버워치 사이트를 HTML, CSS, jQuery, Java Script를 사용하여 클론 코딩/리뉴얼하여 제작했습니다.</p>
                         <p class="pro_subDesc">Responsive web site</p>
                         <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
-                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="http://rlawldnjs1224.dothome.co.kr/overwatch">View Website<i class="fa fa-arrow-circle-right"></i></a>
                         <div class="participation">
                           <p>퍼블리싱</p>
                           <p>100%</p>
@@ -291,25 +297,22 @@
                       <div class="tool">
                         <span>Tools</span>
                         <div class="tool_imgs">
-                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                          <div class="img_box"><img src="img/js.png" alt=""></div>
-                          <!-- <div class="img_box"><img src="img/php.png" alt=""></div> -->
-                          <!-- <div class="img_box"><img src="img/mariaDB.png" alt=""></div> -->
-                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                          <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                          <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                          <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
                         </div>
                       </div>
                       <div class="font">
                         <span>Font</span>
-                        <div class="font_box">
+                        <div class="font_box font_box_ow">
                           <div class="font_name">
                             <p>Noto Sans</p>
-                            <p>Open Sans</p>
-                            <p>Dancing Script</p>
+                            <p>Koverwatch</p>
                           </div>
-                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                          메인 페이지에 사용된 포인트 폰트</p>
+                          <div class="font_desc">
+                            <p>깔끔한 이미지의 가독성 좋은 한글 폰트</p>
+                            <p>타이틀에 사용된 오버워치 제작 폰트</p>
+                          </div>
                         </div>
                       </div>
                       <!-- end of font -->
@@ -324,7 +327,7 @@
                         <span>Main Image</span>
                         <div class="img_box">
                           <div>
-                            <img src="img/overwatch_pc.png" alt="Overwatch 메인 페이지">
+                            <img src="img/overwatch_pc.png" alt="오버워치 메인 페이지">
                           </div>
                         </div>
                       </div>
@@ -337,10 +340,10 @@
               </div>
               
               <div class="swiper-slide">
-                <div class="slide_innerbox">
+                <div class="slide_innerbox sche">
                   <div class="img_box">
                     <a href="http://rlawldnjs1224.dothome.co.kr/myschedule" class="imgLink">
-                      <img src="img/sche.png" alt="">
+                      <img src="img/sche.png" alt="My schedule 사이트로 이동">
                       <i class="fa fa-search-plus"></i>
                     </a>
                   </div>
@@ -354,8 +357,8 @@
                     <h1>My Schedule</h1>
                     <p>Schedule Managing Website</p>
                     <div class="btns">
-                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
-                      <a href="https://github.com/jeewon1224/movie_api" class="git_btn" target="_blank">View Github</a>
+                      <button class="view_btn" aria-haspopup="true">View Detail</button>
+                      <a href="https://github.com/jeewon1224/My-Schedule" class="git_btn" target="_blank">View Github</a>
                     </div>
                   </div>
                 </div>
@@ -366,16 +369,16 @@
                   <div class="modal_item sche">
                     <div class="title_sec">
                       <div class="title_img">
-                        <div><img src="img/sche_hidden.png" alt=""></div>
+                        <div><img src="img/sche_hidden.png" alt="my schedule 메인 이미지"></div>
                       </div>
                       <div class="title_desc">
                         <h3>My Schedule</h3>
                         <hr>
-                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, PHP와 SQL을 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 제작한 일정 관리 사이트로, PHP와 mariaDB를 활용하여 일정 데이터의 관리가 가능합니다.</p>
                         <p class="pro_subDesc">Responsive web site</p>
                         <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
-                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="http://rlawldnjs1224.dothome.co.kr/myschedule">View Website<i class="fa fa-arrow-circle-right"></i></a>
                         <div class="participation">
                           <p>기획<br>디자인<br>퍼블리싱</p>
                           <p>50%<br>50%<br>100%</p>
@@ -388,25 +391,22 @@
                       <div class="tool">
                         <span>Tools</span>
                         <div class="tool_imgs">
-                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                          <div class="img_box"><img src="img/js.png" alt=""></div>
-                          <div class="img_box"><img src="img/php.png" alt=""></div>
-                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
-                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                          <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                          <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                          <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
+                          <div class="img_box"><img src="img/php.png" alt="php 아이콘"></div>
+                          <div class="img_box"><img src="img/mariaDB.png" alt="mariaDB 아이콘"></div>
                         </div>
                       </div>
                       <div class="font">
                         <span>Font</span>
-                        <div class="font_box">
+                        <div class="font_box font_box_sche">
                           <div class="font_name">
                             <p>Noto Sans</p>
                             <p>Open Sans</p>
-                            <p>Dancing Script</p>
                           </div>
                           <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                          메인 페이지에 사용된 포인트 폰트</p>
+                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br></p>
                         </div>
                       </div>
                       <!-- end of font -->
@@ -421,7 +421,7 @@
                         <span>Main Image</span>
                         <div class="img_box">
                           <div>
-                            <img src="img/sche_hidden.png" alt="My Schedule 이미지">
+                            <img src="img/sche_hidden.png" alt="my schedule 메인 이미지">
                           </div>
                         </div>
                       </div>
@@ -434,10 +434,10 @@
               </div>
               
               <div class="swiper-slide">
-                <div class="slide_innerbox">
+                <div class="slide_innerbox api">
                   <div class="img_box">
-                    <a href="#" class="imgLink">
-                      <img src="img/cine_ground.png" alt="">
+                    <a href="http://rlawldnjs1224.dothome.co.kr/movie_api/" class="imgLink" target="_blank">
+                      <img src="img/cine_ground.png" alt="씨네 그라운도 사이트로 이동">
                       <i class="fa fa-search-plus"></i>
                     </a>
                   </div>
@@ -451,7 +451,7 @@
                     <h1>Api Project</h1>
                     <p>Movie Website</p>
                     <div class="btns">
-                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                      <button class="view_btn" aria-haspopup="true">View Detail</button>
                       <a href="https://github.com/jeewon1224/movie_api" class="git_btn" target="_blank">View Github</a>
                     </div>
                   </div>
@@ -463,19 +463,19 @@
                   <div class="modal_item api">
                     <div class="title_sec">
                       <div class="title_img">
-                        <div><img src="img/gold_pc.png" alt=""></div>
+                        <div><img src="img/cine_ground_hidden.png" alt="씨네 그라운드 메인 이미지"></div>
                       </div>
                       <div class="title_desc">
                         <h3>Movie Website Project</h3>
                         <hr>
-                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하였으며, 데이터 베이스를 활용하여 기본적인 관리자 기능이 가능한 웹사이트를 제작하였습니다.</p>
+                        <p class="pro_desc">네이버와 YTS의 오픈 API 소스를 활용하여 제작한 영화 사이트입니다. 간단한 영화 검색, 장르별 보기, 신작 보기 등이 가능합니다. API 데이터를 Json으로 수신하여 Ajax로 출력하여 사용했습니다.</p>
                         <p class="pro_subDesc">Responsive web site</p>
                         <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
-                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="http://rlawldnjs1224.dothome.co.kr/movie_api"  target="_blank">View Website<i class="fa fa-arrow-circle-right"></i></a>
                         <div class="participation">
                           <p>기획<br>디자인<br>퍼블리싱</p>
-                          <p>100%<br>100%<br>100%</p>
+                          <p>50%<br>100%<br>100%</p>
                         </div>
                         
                       </div>
@@ -485,25 +485,22 @@
                       <div class="tool">
                         <span>Tools</span>
                         <div class="tool_imgs">
-                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                          <div class="img_box"><img src="img/js.png" alt=""></div>
-                          <div class="img_box"><img src="img/php.png" alt=""></div>
-                          <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
-                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
+                          <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                          <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                          <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
                         </div>
                       </div>
                       <div class="font">
                         <span>Font</span>
-                        <div class="font_box">
+                        <div class="font_box font_box_api">
                           <div class="font_name">
-                            <p>Noto Sans</p>
                             <p>Open Sans</p>
-                            <p>Dancing Script</p>
+                            <p>Bebas Neue</p>
                           </div>
-                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                          메인 페이지에 사용된 포인트 폰트</p>
+                          <div class="font_desc">
+                           <p>본문에 사용된 깔끔한 이미지의 가독성 좋은 폰트</p>
+                           <p>제목, 네비게이션에 사용된 포인트 폰트</p>
+                          </div>
                         </div>
                       </div>
                       <!-- end of font -->
@@ -518,7 +515,7 @@
                         <span>Main Image</span>
                         <div class="img_box">
                           <div>
-                            <img src="img/gold_pc.png" alt="Cine Groung 이미지">
+                            <img src="img/cine_ground_hidden.png" alt="씨네 그라운드 메인 이미지">
                           </div>
                         </div>
                       </div>
@@ -533,10 +530,10 @@
 
 
               <div class="swiper-slide">
-                <div class="slide_innerbox">
+                <div class="slide_innerbox wp">
                   <div class="img_box">
                     <a href="#" class="imgLink">
-                      <img src="img/example.png" alt="">
+                      <img src="img/wp.png" alt="더퓨어 사이트로 이동">
                       <i class="fa fa-search-plus"></i>
                     </a>
                   </div>
@@ -548,10 +545,10 @@
                     </div>
                     <h2>#05</h2>
                     <h1>Web Planning Project</h1>
-                    <p>기획 프로젝트</p>
+                    <p>UIUX 프로젝트</p>
                     <div class="btns">
-                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
-                      <a href="https://github.com/jeewon1224/dbproject" class="git_btn" target="_blank">View Github</a>
+                      <button class="view_btn" aria-haspopup="true">View Detail</button>
+                      <a href="#" class="git_btn" target="_blank">View Github</a>
                     </div>
                   </div>
                 </div>
@@ -559,15 +556,15 @@
                 <div class="mask" role="dialog"></div>
                 <div class="modal" role="alert">
                   <button class="close" role="button">X</button>
-                  <div class="modal_item plan">
+                  <div class="modal_item wp">
                     <div class="title_sec">
                       <div class="title_img">
-                        <div><img src="img/gold_pc.png" alt=""></div>
+                        <div><img src="img/wp_hidden.png" alt="더퓨어 메인 이미지"></div>
                       </div>
                       <div class="title_desc">
                         <h3>Web Planning Project</h3>
                         <hr>
-                        <p class="pro_desc">가상의 브랜드를 기획하여 웹사이트를 디자인, 퍼블리싱 하였습니다. </p>
+                        <p class="pro_desc">천연화장품 브랜드 '더퓨어'를 기획, 디자인, 퍼블리싱 했습니다.</p>
                         <p class="pro_subDesc">Responsive web site</p>
                         <p class="pro_period">제작기간 : 2020.12.16 - 2021.02.04</p>
 
@@ -584,9 +581,9 @@
                       <div class="tool">
                         <span>Tools</span>
                         <div class="tool_imgs">
-                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                          <div class="img_box"><img src="img/js.png" alt=""></div>
+                          <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                          <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                          <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
                           <div class="img_box"><img src="img/php.png" alt=""></div>
                           <div class="img_box"><img src="img/mariaDB.png" alt=""></div>
                           <div class="img_box"><img src="img/photoshop_CC_icon.png" alt=""></div>
@@ -594,15 +591,15 @@
                       </div>
                       <div class="font">
                         <span>Font</span>
-                        <div class="font_box">
+                        <div class="font_box font_box_wp">
                           <div class="font_name">
                             <p>Noto Sans</p>
                             <p>Open Sans</p>
-                            <p>Dancing Script</p>
                           </div>
-                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                          메인 페이지에 사용된 포인트 폰트</p>
+                          <div class="font_desc">
+                            <p>깔끔한 이미지의 가독성 좋은 한글 폰트</p>
+                            <p>깔끔한 이미지의 가독성 좋은 영문 폰트</p>
+                        </div>
                         </div>
                       </div>
                       <!-- end of font -->
@@ -617,7 +614,7 @@
                         <span>Main Image</span>
                         <div class="img_box">
                           <div>
-                            <img src="img/gold_pc.png" alt="기획 프로젝트 메인 이미지">
+                            <img src="img/wp_hidden.png" alt="더퓨어 메인 이미지">
                           </div>
                         </div>
                       </div>
@@ -630,14 +627,14 @@
               </div>
               
               <div class="swiper-slide">
-                <div class="slide_innerbox">
+                <div class="slide_innerbox pf">
                   <div class="img_box">
-                    <a href="#" class="imgLink">
-                      <img src="img/example.png" alt="">
+                    <a href="http://rlawldnjs1224.dothome.co.kr/pf" class="imgLink">
+                      <img src="img/pf.png" alt="포트폴리오 사이트로 이동">
                       <i class="fa fa-search-plus"></i>
                     </a>
                   </div>
-                  <div class="txtBox">
+                  <div class="txtBox ">
                     <div class="hidden_img">
                       <div class="hidden">
                         <!-- <img src="img/gold_bg.png" alt=""> -->
@@ -647,7 +644,7 @@
                     <h1>Portfolio</h1>
                     <p>Portfolio site</p>
                     <div class="btns">
-                      <button class="viewBtn" aria-haspopup="true">View Detail</button>
+                      <button class="view_btn" aria-haspopup="true">View Detail</button>
                       <a href="https://github.com/jeewon1224/portfolio" class="git_btn" target="_blank">View Github</a>
                     </div>
                   </div>
@@ -656,19 +653,19 @@
                 <div class="mask" role="dialog"></div>
                 <div class="modal" role="alert">
                   <button class="close" role="button">X</button>
-                  <div class="modal_item portf">
+                  <div class="modal_item pf">
                     <div class="title_sec">
                       <div class="title_img">
-                        <div><img src="img/gold_pc.png" alt=""></div>
+                        <div><img src="img/pf_hidden.png" alt="포트폴리오 사이트 메인 이미지"></div>
                       </div>
                       <div class="title_desc">
                         <h3>Portfolio</h3>
                         <hr>
-                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱하여 모든 작업물을 감상할 수 있는 포트폴리오 사이트를 제작하였습니다.</p>
+                        <p class="pro_desc">HTML, CSS, jQuery, Java Script를 사용하여 퍼블리싱한 모든 작업물을 감상할 수 있는 개인  포트폴리오 사이트입니다.</p>
                         <p class="pro_subDesc">Responsive web site</p>
                         <p class="pro_period">제작기간 : 2021.03.07 - 2021.03.17</p>
 
-                        <a href="#">View Website<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="http://rlawldnjs1224.dothome.co.kr/pf" target="_blank">View Website<i class="fa fa-arrow-circle-right"></i></a>
                         <div class="participation">
                           <p>기획<br>디자인<br>퍼블리싱</p>
                           <p>100%<br>100%<br>100%</p>
@@ -681,23 +678,25 @@
                       <div class="tool">
                         <span>Tools</span>
                         <div class="tool_imgs">
-                          <div class="img_box"><img src="img/HTML.png" alt=""></div>
-                          <div class="img_box"><img src="img/css.html.png" alt=""></div>
-                          <div class="img_box"><img src="img/js.png" alt=""></div>
-                          <div class="img_box"><img src="img/php.png" alt=""></div>
+                          <div class="img_box"><img src="img/HTML.png" alt="html 아이콘"></div>
+                          <div class="img_box"><img src="img/css.html.png" alt="css 아이콘"></div>
+                          <div class="img_box"><img src="img/js.png" alt="js 아이콘"></div>
+                          <div class="img_box"><img src="img/photoshop_CC_icon.png" alt="포토샵 아이콘"></div>
                         </div>
                       </div>
                       <div class="font">
                         <span>Font</span>
-                        <div class="font_box">
+                        <div class="font_box font_box_pf">
                           <div class="font_name">
                             <p>Noto Sans</p>
                             <p>Open Sans</p>
-                            <p>Dancing Script</p>
+                            <p>Poppins</p>
                           </div>
-                          <p class="font_desc">깔끔한 이미지의 가독성 좋은 한글 폰트 <br>
-                          깔끔한 이미지의 가독성 좋은 영문 폰트 <br>
-                          메인 페이지에 사용된 포인트 폰트</p>
+                          <div class="font_desc">
+                            <p>깔끔한 이미지의 가독성 좋은 한글 폰트</p>
+                            <p>깔끔한 이미지의 가독성 좋은 영문 폰트</p>
+                            <p>제목과 네비게이션에 사용된 동글동글한 느낌의 포인트 폰트</p>
+                        </div>
                         </div>
                       </div>
                       <!-- end of font -->
@@ -712,7 +711,7 @@
                         <span>Main Image</span>
                         <div class="img_box">
                           <div>
-                            <img src="img/gold_pc.png" alt="포트폴리오 프로젝트 메인 이미지">
+                            <img src="img/pf_hidden.png" alt="포트폴리오 사이트 메인 이미지">
                           </div>
                         </div>
                       </div>

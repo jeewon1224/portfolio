@@ -206,7 +206,7 @@ $(document).ready(function () {
 
       if (anchorLink == "3st") {
         // 모달창 기능
-        $(".viewBtn").on("click", function () {
+        $(".view_btn").on("click", function () {
           $(".mask").addClass("active");
           $.fn.fullpage.setAllowScrolling(false);
           $(".swiper-button-next.nextBtn, .swiper-button-prev.prevBtn").css('z-index','0');
