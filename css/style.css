@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR:wght@300&family=Open+Sans:wght@300&display=swap');
-@font-face { font-family: 'koverwatch'; src: url(../font/koverwatch.ttf) format('truetype');}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face { font-family: 'koverwatch'; src: url(../data/koverwatch.ttf) format('truetype');}
+
 
 
 /* --** Reset CSS **-- */
 * { margin: 0px; padding: 0px; box-sizing: border-box; }
-
 ul, ol { margin-top: 0;}
 ul ul { margin-bottom: 0; }
 li { font-size: 13px; margin: 5px 0px 10px 0px; }
-html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden; font-family: 'Noto Sans KR', sans-serif, 'Open Sans', sans-serif; }
-/* 'Open Sans', sans-serif; */
+html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden; font-family: 'Noto Sans KR', sans-serif;}
 img{display: block;}
 h1, h2, h3, h4, h5, h6{margin:0}
 .clear:after{clear: both; display: block; content: '';}
@@ -19,9 +16,12 @@ h1, h2, h3, h4, h5, h6{margin:0}
 a{text-decoration: none;}
 
 
+
+
+/* fullpage 기본 스타일 */
 	#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
 	.fullsection{width:100%;height:100%;position:relative;}
-	.full1{background:rgb(255, 255, 255); _background-image: url(../img/sky.jpg); _background-size: cover; _background-position: 0 100%;}
+	.full1{background:rgb(255, 255, 255);}
 	.full2{background:rgb(255, 255, 255);}
 	.full3{background:rgb(255, 255, 255);}
 	.full4{background:rgb(255, 255, 255);}
@@ -37,7 +37,6 @@ a{text-decoration: none;}
 
 
 
-.home{}
 
 
 
@@ -69,15 +68,14 @@ a{text-decoration: none;}
   
 .menu_btn {display: flex; align-items: center; position: fixed; top: 20px; left: 20px; width: 26px; height: 26px; cursor: pointer; z-index: 1;}
   
-.menu_btn > span,
-.menu_btn > span::before,
-.menu_btn > span::after {display: block; position: absolute; width: 100%; height: 2px; background-color: #111; transition-duration: .25s;}
-.menu_btn > span::before {content: ''; top: -8px;}
-.menu_btn > span::after {content: ''; top: 8px;}
+.menu_btn>span,
+.menu_btn>span::before,
+.menu_btn>span::after{display: block; position: absolute; width: 100%; height: 2px; background-color: #111; transition-duration: .25s;}
+.menu_btn>span::before{content: ''; top: -8px;}
+.menu_btn>span::after{content: ''; top: 8px;}
   
-.menu_box {display: block; position: fixed; visibility: hidden; top: 0; left: -100%; width: 300px; height: 100%; margin: 0; _padding: 80px 0; list-style: none; background-color: #ECEFF1; box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
- transition-duration: .25s; display: flex; flex-direction: column; justify-content: center; align-items: center; _position: absolute; _height: 100vh;}
-  
+.menu_box {display: block; position: fixed; visibility: hidden; top: 0; left: -100%; width: 300px; height: 100%; margin: 0; list-style: none; background-color: #ECEFF1; box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+ transition-duration: .25s; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .menu_item {display: block; padding: 12px 24px; color: #333; font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; text-decoration: none; transition-duration: .25s;}
 .menu_item:hover {background-color: #CFD8DC;}
 
@@ -85,23 +83,21 @@ a{text-decoration: none;}
 
 
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* Intro 페이지 */
-
-.home .home_wrapper{width: 100%; height: 100%; margin: auto; max-width: 1400px; padding: 150px 0; }
+/* HOME 페이지 */
+.home{}
+.home .home_wrapper{width: 100%;
+  /* height: 100%; */ margin: auto; max-width: 1400px; padding: 0 50px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .home .title{width: 100%; height: auto;}
 .home .title .type {margin: 0 auto; width: 100%; font-size: 80px; font-family: 'Poppins', sans-serif; _background: linear-gradient(to bottom, rgba(83,17,191,1) 1%,rgba(150,76,255,1) 34%,rgba(247,181,255,1) 96%);
   _-webkit-background-clip: text;
   _-webkit-text-fill-color: transparent; color: #111;}
 .home .title .type::after {content: '|'; display: inline;animation: blink 0.7s infinite;}
 
-.home .sub_title{text-align: right; padding: 300px 0 0 0; font-family: 'Poppins', sans-serif;}
-.home .sub_title h3{font-size: 40px; _background: linear-gradient(to bottom, rgba(119,218,255,1) 1%,rgba(163,193,255,1) 34%,rgba(255,255,255,1) 96%);  _-webkit-background-clip: text; _-webkit-text-fill-color: transparent; color: #111;}
+.home .sub_title{text-align: right; padding: 150px 0 0 0; font-family: 'Poppins', sans-serif;}
+.home .sub_title h3{font-size: 40px;}
 .home .sub_title p{margin-top: 15px;}
 
-
-
-/* 타이핑 커서 깜박이는 효과 */
+/* 타이핑 커서 깜박이는 애니메이션 효과 */
  @keyframes blink {
   0% {opacity: 1;}
   50% {opacity: 0;}
@@ -120,15 +116,24 @@ a{text-decoration: none;}
 
 
 
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ABOUT 페이지 */
 
 .about {width: 100%; height: 100%; position: relative;}
-.about_wrapper{width: 100%; max-width: 1400px; margin: auto;height: 100%; display: flex; align-items: center; justify-content: center;}
+.about_wrapper{    width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;}
 .about_title{position: absolute; top: calc(50% - 42px); left: 0px; transform: rotate(90deg);  font-family: 'Poppins', sans-serif;}
 
-.about .profile_box{width: 40%; height: 100%; _margin: auto; text-align: center; display: flex; flex-direction: column; flex-direction: column;
+.about .profile_box{width: 40%; height: 100%; text-align: center; display: flex; flex-direction: column; flex-direction: column;
   align-items: center; justify-content: center;}
 .about .profile_box h1{margin: 0; font-family: 'Poppins', sans-serif; font-size: 40px;}
 
@@ -140,14 +145,12 @@ a{text-decoration: none;}
 
 .about .profile_box .underline{border: 1px solid #999;  width: 300px; display: inline-block; margin:20px 0;}
 .about .profile_box .underline2{border: 1px solid #999;  width: 100%; display: none;}
-
-
 .about .profile_box .bottom_box{margin-top: 50px;}
 .about .profile_box .bottom_box p{margin: 10px 0;}
 
 
 
-/* 스킬 섹션 */
+/* ABOUT skill 섹션 */
 /* .skill{width: 100%; height: 100%;}
 .skill_wrap{height: 100%;} */
 .about .skill_list{display: flex; width: 60%; height: 100%; align-items: center; justify-content: center; flex-direction: column;}
@@ -155,39 +158,25 @@ a{text-decoration: none;}
 .skill_list>div{display: flex; align-items: center; justify-content: center; width: 100%; margin: 40px 0;}
 .skill_list .skill_icon{width: 70px; margin-right: 15px;}
 .skill_list .skill_icon img{width: 100%;}
-
-
 .skill_list .skill_txt{width:100%; text-align: left;}
 .skill_list .skill_txt p{margin: 5px 0;}
 
 .skill_txt .bar{width: 100%; height: 25px; position: relative;}
 .skill_txt .bar .hidden_bar{width: 100%; height: 100%; background-color: #ddd;}
-.skill_txt .htmlbar .filled_bar{width: 90%; height: 100%; _background: linear-gradient(to right, rgba(50,0,168,1) 0%,rgba(175,224,255,1) 100%); position: absolute; background: #111; animation: filled_bar1 2s ease-out;}
+.skill_txt .htmlbar .filled_bar{width: 90%; height: 100%; position: absolute; background: #111; animation: filled_bar1 2s ease-out;}
 @keyframes filled_bar1 { 0% { width: 0%; } 100% { width: 90%; } }
-
-
-
-.skill_txt .cssbar .filled_bar{width: 90%; height: 100%; _background: linear-gradient(to right, rgba(50,0,168,1) 0%,rgba(175,224,255,1) 100%); position: absolute; background: #111; animation: filled_bar2 2s ease-out;}
+.skill_txt .cssbar .filled_bar{width: 90%; height: 100%; position: absolute; background: #111; animation: filled_bar2 2s ease-out;}
 @keyframes filled_bar2 { 0% { width: 0%; } 100% { width: 90%; } }
-
-
-.skill_txt .jsbar .filled_bar{width: 60%; height: 100%; _background: linear-gradient(to right, rgba(50,0,168,1) 0%,rgba(175,224,255,1) 100%); position: absolute; background: #111; animation: filled_bar3 2s ease-out;}
+.skill_txt .jsbar .filled_bar{width: 60%; height: 100%; position: absolute; background: #111; animation: filled_bar3 2s ease-out;}
 @keyframes filled_bar3 { 0% { width: 0%; } 100% { width: 60%; } }
-
-.skill_txt .psbar .filled_bar{width: 50%; height: 100%; _background: linear-gradient(to right, rgba(50,0,168,1) 0%,rgba(175,224,255,1) 100%); position: absolute; background: #111; animation: filled_bar4 2s ease-out;}
+.skill_txt .psbar .filled_bar{width: 50%; height: 100%; position: absolute; background: #111; animation: filled_bar4 2s ease-out;}
 @keyframes filled_bar4 { 0% { width: 0%; } 100% { width: 50%; } }
-
 .skill_txt .bar .percent{position: absolute; top: 0; right: 5px;}
 
 
 
 
-
-
-
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* works 페이지 */
+/* PORTFOLIO 페이지 */
 .works{width: 100%; height: 100%; position: relative;}
 .works_title{position: absolute; top: calc(50% - 38px); left: -25px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
 .works_wrapper{height: 100%; width: 100%; margin: auto;}
@@ -226,32 +215,31 @@ a{text-decoration: none;}
 
 .txtBox .btns{width: 100%; height: auto; margin-top: 10px; display: flex;
   justify-content: space-between;}
-.txtBox .view_btn{height: auto; color: #555; cursor: pointer;  border: 1px solid #555; outline: 0; background: none; display: inline-block; _position: absolute; _bottom: 100px; _right: 10px; transition: all 0.4s;  font-family: 'Open Sans', sans-serif;   width: calc(50% - 1px); font-size: 16px;}
+.txtBox .view_btn{height: auto; color: #555; cursor: pointer;  border: 1px solid #555; outline: 0; background: none; display: inline-block; transition: all 0.4s;  font-family: 'Open Sans', sans-serif;   width: calc(50% - 1px); font-size: 16px;}
 .txtBox .git_btn{height: auto; width: calc(50% - 1px); display: inline-block; font-family: 'Open Sans', sans-serif; font-size: 16px; color: #555; border: 1px solid #555; text-align: center; transition: all .4s;}
-
 .txtBox .view_btn:hover{background: #555; color: #fff;}
 .txtBox .view_btn:active{transform: scale(0.9);}
-
 .txtBox .git_btn:hover{background: #555; color: #fff;}
 
 
-/* 
-  // Close Button */
+.wp .txtBox .view_btn{width: 33%;}
+.wp .txtBox .git_btn{width: 33%; display: flex; align-items: center; justify-content: center;}
+.wp .txtBox .pdf_btn{width: 33%; border: 1px solid #555; color: #555; text-align: center; font-family: 'Open Sans', sans-serif; font-size: 16px; transition: all .4s;}
+.wp .txtBox .pdf_btn:hover{background: #555; color: #fff;}
 
+
+  /* Close Button */ 
 .close{position: absolute; top: 0; right: 0; width: 35px; height: 30px;  background: #000; color: #fff; cursor: pointer; border: 0; z-index: 10;}
 
-  /* // The mask */
-
-
-.mask {_position: fixed; width: 100%; height: 100%; background: rgba(75, 75, 75, 0.7); z-index: 50; visibility: hidden; opacity: 0; transition: 0.7s; position: fixed; /* top: 0; */ /* left: 0; */}
-.modal {_position: fixed; top: 50%; left: 50%; width: 95%; height: 800px; background: #fff; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out; _transform: translateY(45px);}
+  /* mask */
+.mask {width: 100%; height: 100%; background: rgba(75, 75, 75, 0.7); z-index: 50; visibility: hidden; opacity: 0; transition: 0.7s; position: fixed;}
+.modal {top: 50%; left: 50%; width: 95%; height: 800px; background: #fff; z-index: 100; position: absolute; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: 0.7s ease-out;}
 
 
 /* // Class Active */
 
 .active{visibility: visible; opacity: 1;}
-
-.active + .modal {visibility: visible; opacity: 1; _transform: translateY(0);}
+.active + .modal {visibility: visible; opacity: 1;}
 
 
 /* modal 창 내부 스타일링 */
@@ -260,7 +248,8 @@ a{text-decoration: none;}
 .modal_item::-webkit-scrollbar-thumb{background: #999;}
 .modal_item::-webkit-scrollbar-track{background: #111;}
 
-.modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; background: #fff; padding: 30px 30px 0 30px;}
+/* 모달창의 배경색이 모두 다르기 때문에 각각의 클래스를 부여해줌  */
+.modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; padding: 30px 30px 0 30px;}
 .modal_item.db .title_sec {background: #ffd9dd;}
 .modal_item.ow .title_sec {background: #ffd295;}
 .modal_item.sche .title_sec {background: #008c8c66;}
@@ -279,7 +268,6 @@ a{text-decoration: none;}
 .modal_item .title_desc>a{color: #333; position: absolute; bottom: 150px; right:0; font-size: 15px; transition: all 0.4s;}
 .modal_item .title_desc>a>i{font-size: 17px; margin-left: 5px; transition: all 0.4s;}
 .modal_item .title_desc>a:hover >i{color: #fff;}
-
 .title_desc .participation{display: flex; font-family: 'Noto Sans KR', sans-serif; text-align: right; justify-content: flex-end;}
 .title_desc .participation>p:first-child{margin-right: 30px;}
 
@@ -295,12 +283,10 @@ a{text-decoration: none;}
 .details .font span{display: inline-block; width: 30%; display: flex;
   justify-content: center; align-items: center;}
 .font .font_box{width: 70%; display: flex; align-items: center; }
-.font .font_box .font_name{width: 20%; text-align: left;}
-/* .font .font_box .font_name p:first-child{font-family: 'Noto Sans KR', sans-serif;} */
-/* .font .font_box .font_name p:nth-child(2){font-family: 'Open Sans', sans-serif;} */
-/* .font .font_box .font_name p:last-child{font-family: 'Dancing Script', cursive;} */
-.font .font_box .font_desc{width: 80%; text-align: left;}
 
+/* 폰트 세부 사항이 모두 다르기 때문에 각각의 클래스 부여해줌 */
+.font .font_box .font_name{width: 20%; text-align: left;}
+.font .font_box .font_desc{width: 80%; text-align: left;}
 .font_box_db .font_name p:nth-child(2){font-family: 'Open Sans', sans-serif;}
 .font_box_db .font_name p:last-child{font-family: 'Dancing Script', cursive;}
 .font_box_ow .font_name p:last-child{font-family: 'koverwatch'; font-size: 20px;}
@@ -312,66 +298,43 @@ a{text-decoration: none;}
 .font_box_pf  .font_name p:nth-child(2){font-family: 'Open Sans', sans-serif;}
 .font_box_pf  .font_name p:last-child{font-family: 'Poppins', sans-serif;}
 
-
-
 .details>div{height: 100px;}
 .details .color{width: 100%; display: flex;}
 .details .color span{display: inline-block; width: 30%; display: flex; justify-content: center; align-items: center;}
 .color .color_box{width: 70%; display: flex; align-items: center;}
 .color .color_box p{color: #eeb4ba; font-weight: 500;}
-.modal_item.ow .color .color_box p{color: #fa9c1e; font-weight: 500;}
-.modal_item.sche .color .color_box p{color: #008C8C; font-weight: 500;}
-.modal_item.api .color .color_box p{color: #00ffd0; font-weight: 500;}
-.modal_item.wp .color .color_box p{color: #111; font-weight: 500;}
-.modal_item.pf .color .color_box p{color: #111; font-weight: 500;}
-
-
-
+.modal_item.ow .color .color_box p{color: #fa9c1e;}
+.modal_item.sche .color .color_box p{color: #008C8C;}
+.modal_item.api .color .color_box p{color: #00ffd0;}
+.modal_item.wp .color .color_box p{color: #111;}
+.modal_item.pf .color .color_box p{color: #111;}
 
 .details .main_img{width: 100%; display: flex; margin-top: 40px; height: fit-content; display: none;}
 .details .main_img span{display: inline-block; width: 20%; display: flex; justify-content: center; text-align: center;}
 .main_img .img_box{width: 80%; display: flex; align-items: center;}
-.main_img .img_box>div{width: 100%; _padding: 5px;}
+.main_img .img_box>div{width: 100%;}
 .main_img .img_box>div>img{width: 100%;}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 컨택트 섹션 */
-.contact{width: 100%; height: 100%; background: url(../img/paper3.png); background-size: cover; }
+/* CONTACT 섹션 */
+.contact{width: 100%; height: 100%; _background: url(../img/paper3.jpg); background-size: cover; }
 .contact_wrapper{width: 100%;
-  height: 100%;
-  margin: auto;
-  max-width: 1400px;
-  padding: 150px 0;}
-.contact_title{position: absolute; top: calc(50% - 59px); left: 0px; transform: rotate(90deg); font-family: 'Poppins', sans-serif;}
-.contact_box {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+    /* height: 100%; */ margin: auto; max-width: 1400px; padding: 0 50px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.contact_box {position: relative; width: 100%; height: 100%;}
 .contact .contact_me h2{font-family: 'Poppins', sans-serif; font-size: 60px;}
-
-
-.contact .info_box{position: absolute;
+.contact .info_box{    /* position: absolute; */
   bottom: 0px;
   right: 0px;
-}
+  /* margin-top: 50px; */
+  padding: 350px 0 0 0;
+  /* width: 100%; */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: flex-end;}
 .contact .info_box .tel,
 .contact .info_box .email{display: flex; flex-direction: row; border-bottom: 1px solid #111; width: 500px;justify-content: space-between; font-size: 24px; margin-bottom: 10px; }
 .contact .info_box .tel p:last-child,
