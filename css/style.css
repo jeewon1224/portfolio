@@ -197,7 +197,7 @@ a{text-decoration: none;}
 .txtBox .hidden_img{display: none; width: 100%;}
 .txtBox .hidden_img .hidden_link{display: inline-block; width: auto; height: auto;text-align: center; position: relative;}
 .txtBox .hidden_img .hidden_link i{position: absolute; top: calc(50% - 8px); color: #fff; font-size: 40px; opacity: 1; transition: all 0.4s;}
-.db .txtBox .hidden_img .hidden{width: 100%; background: url(../img/db_mo.png) no-repeat; background-size: cover;}
+.db .txtBox .hidden_img .hidden{width: 100%; background: url(../img/db_mo.jpg) no-repeat; background-size: cover;}
 .ow .txtBox .hidden_img .hidden{width: 100%; background: url(../img/overwatch_mo.png) no-repeat; background-size: cover; background-position: center;}
 .sche .txtBox .hidden_img .hidden{width: 100%; background: url(../img/sche_mo.png) no-repeat; background-size: cover; background-position: center;}
 .api .txtBox .hidden_img .hidden{width: 100%; background: url(../img/cine_ground_mo.png) no-repeat; background-size: cover; background-position: center;}
@@ -250,7 +250,7 @@ a{text-decoration: none;}
 
 /* 모달창의 배경색이 모두 다르기 때문에 각각의 클래스를 부여해줌  */
 .modal_item .title_sec{width: 100%; height: 100%; overflow: hidden; display: flex; padding: 30px 30px 0 30px;}
-.modal_item.db .title_sec {background: #ffd9dd;}
+.modal_item.db .title_sec {background: #0d013c4d;}
 .modal_item.ow .title_sec {background: #ffd295;}
 .modal_item.sche .title_sec {background: #008c8c66;}
 .modal_item.api .title_sec {background: #6ff5dc59;}
@@ -302,7 +302,7 @@ a{text-decoration: none;}
 .details .color{width: 100%; display: flex;}
 .details .color span{display: inline-block; width: 30%; display: flex; justify-content: center; align-items: center;}
 .color .color_box{width: 70%; display: flex; align-items: center;}
-.color .color_box p{color: #eeb4ba; font-weight: 500;}
+.color .color_box p{color: #0D013C; font-weight: 500;}
 .modal_item.ow .color .color_box p{color: #fa9c1e;}
 .modal_item.sche .color .color_box p{color: #008C8C;}
 .modal_item.api .color .color_box p{color: #00ffd0;}
